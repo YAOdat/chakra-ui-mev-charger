@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Badge, Image, Text, Stack } from '@chakra-ui/react';
-import { products, vehicles } from './data/productdata';
+import { products } from './data/productdata';
 import ProductFilter from './ProductFilter';
 
 const Products = () => {
