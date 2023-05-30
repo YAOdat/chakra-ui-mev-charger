@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Box } from '@chakra-ui/react'
 import { ProductCard } from './components/ProductCard'
@@ -10,6 +9,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Products from './components/Products';
 import About from './components/About';
+import NotFound from './components/404';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MultiStep from './components/Multistep';
@@ -22,8 +22,13 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/products" element={<Products />} /> */}
         <Route path="/shop" element={<Products />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/chargers" element={<Products />} />
+        <Route path="/gbt-chargers" element={<Products />} />
+
         <Route path="/pick" element={<MultiStep />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       
       <Box
