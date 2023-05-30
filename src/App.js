@@ -9,6 +9,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import About from './components/About';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MultiStep from './components/Multistep';
@@ -22,6 +23,7 @@ function App() {
         {/* <Route path="/products" element={<Products />} /> */}
         <Route path="/shop" element={<Products />} />
         <Route path="/pick" element={<MultiStep />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       
       <Box

@@ -297,7 +297,7 @@ const NAV_ITEMS = [
       {
         label: 'Find our location',
         subLabel: 'Come visit us at our location',
-        href: '/location',
+        href: 'https://goo.gl/maps/W6EiN6uQAGyH4BTj8',
       },
     ],
   },
