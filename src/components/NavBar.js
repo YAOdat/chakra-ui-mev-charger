@@ -12,19 +12,21 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
+  useColorMode,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
+  MoonIcon,
 } from '@chakra-ui/icons';
 import Logo from './images/mevchargerslogo.png';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box>
@@ -94,6 +96,10 @@ Wallbox Chargers
             }}
           >
 Portable Chargers          </Button>
+
+      <Button onClick={toggleColorMode}>
+        <MoonIcon/>
+      </Button>
         </Stack>
       </Flex>
 
@@ -266,6 +272,7 @@ const NAV_ITEMS = [
 
   {
     label: 'Products',
+    href: '/products',
     children: [
       {
         label: 'Chargers',

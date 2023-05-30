@@ -7,14 +7,23 @@ import { ProductGrid } from './components/ProductGrid'
 
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import Products from './components/Products';
 import Footer from './components/Footer';
+import Products from './components/Products';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MultiStep from './components/Multistep';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <NavBar />
-      <Home />
+          <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/products" element={<Products />} /> */}
+        <Route path="/shop" element={<Products />} />
+        <Route path="/pick" element={<MultiStep />} />
+      </Routes>
+      
       <Box
     maxW="7xl"
     mx="auto"
@@ -28,7 +37,7 @@ function App() {
     </ProductGrid>
   </Box>
   <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -37,6 +38,7 @@ EV Chargers            </Text>
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
+              <Link to="/pick">
             <Button
               colorScheme={'green'}
               bg={'green.400'}
@@ -47,6 +49,7 @@ EV Chargers            </Text>
               }}>
               Buy Now
             </Button>
+            </Link>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
             </Button>
@@ -72,6 +75,7 @@ EV Chargers            </Text>
           </Stack>
         </Stack>
       </Container>
+      
     </>
   );
 }

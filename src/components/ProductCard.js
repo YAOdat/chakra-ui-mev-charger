@@ -27,7 +27,7 @@ import {
         {...rootProps}
       >
         <Box position="relative">
-          <AspectRatio ratio={4 / 3}>
+          <AspectRatio ratio={4 / 4}>
             <Image
               src={imageUrl}
               alt={name}
