@@ -11,7 +11,6 @@ import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
@@ -20,7 +19,6 @@ import { MdLocalShipping } from 'react-icons/md';
 import { useParams } from 'react-router-dom';
 import { products } from '../components/data/productdata.js';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
-import { Helmet } from 'react-helmet';
 
 export default function Simple() {
   const { id } = useParams();
@@ -61,10 +59,7 @@ export default function Simple() {
   return (
     <Container maxW={'7xl'}>
         {/* add a meta description for the product page */}
-        <Helmet>
-            <title>{product.name}</title>
-            <meta name="description" content={product.metaDescription} />
-
+        
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
@@ -191,7 +186,6 @@ export default function Simple() {
         </Box>
         <img src={product.illustration2} alt="product image" />
       </SimpleGrid>
-      </Helmet>
     </Container>
   );
 }
