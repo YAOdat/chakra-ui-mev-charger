@@ -8,7 +8,12 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
+
+  
 } from '@chakra-ui/react';
+import { ProductCard } from './ProductCard'
+import { products } from './data/productdata'
+import { ProductGrid } from './ProductGrid'
 import { Link } from 'react-router-dom';
 
 export default function CallToActionWithAnnotation() {
@@ -74,7 +79,20 @@ EV Chargers            </Text>
             </Box>
           </Stack>
         </Stack>
+
       </Container>
+        <Box
+    maxW="7xl"
+    mx="auto"
+    px={{ base: '4', md: '8', lg: '12' }}
+    py={{ base: '6', md: '8', lg: '12' }}
+  >
+    <ProductGrid>
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </ProductGrid>
+  </Box>
       
     </>
   );

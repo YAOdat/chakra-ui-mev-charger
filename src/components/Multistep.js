@@ -21,6 +21,8 @@ import {
   Img,
   RadioGroup,
   Stack,
+  Alert,
+  AlertIcon,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
@@ -38,6 +40,15 @@ import Jaguar from '../components/images/Brands/Jaguar-Logo.png';
 import Porsche from '../components/images/Brands/Porsche.png';
 import Changan from '../components/images/Brands/Changan-Logo.png';
 import Ford from '../components/images/Brands/Ford.png';
+
+const NotAvailableAlert = () => {
+  return (
+    <Alert status="warning">
+      <AlertIcon />
+      We are currently out of stock for Chademo chargers and adapters. Please check back later.
+    </Alert>
+  );
+};
 
 const Form1 = ({ onNext }) => {
   const handleClick = () => onNext();
@@ -85,6 +96,7 @@ const Form1 = ({ onNext }) => {
   );
 };
 
+
 const CarModal = ({ isOpen, onClose }) => {
   return (
     <Modal isCentered isOpen={isOpen} onClose={onClose}>
@@ -96,13 +108,13 @@ const CarModal = ({ isOpen, onClose }) => {
           <Text>Tesla Charging Port Type</Text>
         </ModalBody>
         <ModalFooter>
-            <Link to="/type2-charger">
+            <Link to="/products/type2">
             <Button colorScheme="green" mr={3}>
                 GCC Tesla
                 <Img width="25px" src={Tesla} alt="Tesla" />
             </Button>
             </Link>
-            <Link to="/tesla_charger">
+            <Link to="/products/tesla_charger">
             <Button colorScheme="green" color="white" _hover={{backgroundColor:"green.400"}}>US Tesla       <Img width="25px" src={Tesla} alt="Tesla" />
 </Button>
             </Link>
@@ -114,11 +126,17 @@ const CarModal = ({ isOpen, onClose }) => {
 
 const Form2 = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [showNotFoundAlert, setShowNotFoundAlert] = useState(false);
+
 
   const handleCarClick = (portType) => {
     if (portType === 'tesla') {
+      setShowNotFoundAlert(false);
       onOpen();
-    }
+    }  else if (portType === 'chademo') {
+      setShowNotFoundAlert(true);
+    } 
+
   };
 
   return (
@@ -129,22 +147,39 @@ const Form2 = () => {
       <FormControl id="first-name" isRequired>
         <SimpleGrid columns={4} spacing={10}>
           {/* make the car brands as icons when clicking the icon move to the next step */}
-          <Link to="/gbt-chargers">
+          <Link to="/products/GBT">
             <Img width="225px" src={Volkswagen} alt="Volkswagen" onClick={() => handleCarClick('gbt')} />
           </Link>
           <Img width="100px" src={Tesla} alt="Tesla" onClick={() => handleCarClick('tesla')} />
+          <Link to="/products/type2"> 
           <Img width="75px" src={BMW} alt="BMW" onClick={() => handleCarClick('type2')} />
+          </Link>
+          <Link to="/products/type2"> 
           <Img width="75px" src={Mercedes} alt="Mercedes" onClick={() => handleCarClick('type2')} />
+          </Link>
+
           <Img width="75px" src={Nissan} alt="Nissan" ml={8} onClick={() => handleCarClick('chademo')} />
           <Img width="100px" src={Hyundai} alt="Hyundai" onClick={() => handleCarClick('chademo')} />
           <Img width="100px" src={Kia} alt="Kia" onClick={() => handleCarClick('chademo')} />
+          <Link to="/products/type2"> 
           <Img width="100px" src={Renault} alt="Renault" />
+            </Link>
+            <Link to="/products/type2"> 
           <Img width="100px" src={Jaguar} alt="Jaguar" ml={6} />
+          </Link>
+          <Link to="/products/type2"> 
           <Img width="65px" src={Porsche} alt="Porsche" ml={5} />
+          </Link>
+          <Link to="/products/GBT">
           <Img width="100px" src={Changan} alt="Changan" onClick={() => handleCarClick('gbt')} />
+          </Link>
+          <Link to="/products/type1"> 
           <Img width="112px" src={Ford} alt="Ford" mt={4} />
+          </Link>
         </SimpleGrid>
       </FormControl>
+      {showNotFoundAlert && <NotAvailableAlert />}
+
       <CarModal isOpen={isOpen} onClose={onClose} />
     </>
   );
@@ -154,8 +189,7 @@ const Form3 = () => {
   return (
     <>
       <Heading w="100%" textAlign={'center'} fontWeight="normal">
-        Social Handles
-      </Heading>
+Ask an expert      </Heading>
       {/* Rest of your form code for Form3 */}
     </>
   );
@@ -186,7 +220,7 @@ export default function Multistep() {
         m="10px auto"
         as="form"
       >
-        <Progress hasStripe value={progress} mb="5%" mx="5%" isAnimated />
+        <Progress colorScheme='green' hasStripe value={progress} mb="5%" mx="5%" isAnimated />
         {step === 1 && <Form1 onNext={handleNext} />}
         {step === 2 && <Form2 />}
         {step === 3 && <Form3 />}
@@ -196,7 +230,7 @@ export default function Multistep() {
               <Button
                 onClick={handleBack}
                 isDisabled={step === 1}
-                colorScheme="teal"
+                colorScheme="green"
                 variant="solid"
                 w="7rem"
                 mr="5%"
@@ -207,7 +241,7 @@ export default function Multistep() {
                 w="7rem"
                 isDisabled={step === 3}
                 onClick={handleNext}
-                colorScheme="teal"
+                colorScheme="green"
                 variant="outline"
               >
                 Next
@@ -218,9 +252,9 @@ export default function Multistep() {
                 w="7rem"
                 colorScheme="red"
                 variant="solid"
-                onClick={() => alert('You have submitted the form.')}
+                onClick={() => alert('I will message you later.')}
               >
-                Submit
+                Help pls
               </Button>
             )}
           </Flex>
