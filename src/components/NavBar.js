@@ -22,6 +22,8 @@ import {
   ChevronRightIcon,
   MoonIcon,
 } from '@chakra-ui/icons';
+
+import {BsWhatsapp} from 'react-icons/bs';
 import Logo from './images/mevchargerslogo.png';
 
 export default function WithSubnavigation() {
@@ -74,28 +76,16 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            href={'#'}
+            href={'https://api.whatsapp.com/send/?phone=971501679410&text=mevcharger.com'}
             bg={'green.400'}
             _hover={{
               bg: 'green.300',
             }}
 
           >
-Wallbox Chargers
-          </Button>
-          <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'green.400'}
-            href={'#'}
-            _hover={{
-              bg: 'green.300',
-            }}
-          >
-Portable Chargers          </Button>
+            <Icon as={BsWhatsapp} w={5} h={5} mr={3} />
++971 501 679 410          </Button>
+     
 
       <Button onClick={toggleColorMode}>
         <MoonIcon/>
@@ -167,13 +157,13 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+      _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
+            _groupHover={{ color: 'green.400' }}
             fontWeight={500}
           >
             {label}
@@ -189,7 +179,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'green.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>
@@ -287,6 +277,10 @@ const NAV_ITEMS = [
     ],
   },
   {
+    label: 'Blog',
+    href: '/blog',
+  },
+  {
     label: 'About',
     children: [
       {
@@ -301,10 +295,7 @@ const NAV_ITEMS = [
       },
     ],
   },
-  {
-    label: '+971 501 679 410',
-    href: 'https://api.whatsapp.com/send/?phone=971501679410&text=mevcharger.com',
-  },
+ 
  
 ];
 
