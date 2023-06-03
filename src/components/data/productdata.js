@@ -96,9 +96,7 @@ export const images = [
       illustration: 'https://sc04.alicdn.com/kf/H7398f992921f4b1dbc8b9334bf6cb5cah/257948432/H7398f992921f4b1dbc8b9334bf6cb5cah.jpg',
       illustration2: 'https://sc04.alicdn.com/kf/H5c9d3ea26a7348eeabc0f65ed7e52b82o/257948432/H5c9d3ea26a7348eeabc0f65ed7e52b82o.jpg',
       cableLength: '5m',
-    
 
-      
     },
     {
       id: '3',
@@ -114,6 +112,13 @@ export const images = [
       portType: 'type1',
       function: 'extensionCable',
       portType2: 'type2',
+      longDescription:'This extension cable is compatible with all Type 1 and Type 2 EV chargers. It is available in 5m and 10m lengths. The cable is made of high-quality materials and is designed to withstand the elements. It is also equipped with a protective cap to keep the connector clean and dry when not in use. This extension cable is a must-have for any EV owner who wants to charge their electric cars at a charging station that is not within reach of their vehicle. It can be used for ADNOC charging stations, DEWA charging stations, and other charging stations in the UAE.',
+      availablePorts: 'Type 1, Type 2',
+      cableLength: '5m',
+      illustration: 'https://sc01.alicdn.com/kf/Hbcac362e4fc04257b4f78a6c708814b4e.jpg',
+      illustration2: 'https://sc01.alicdn.com/kf/Hf593487f26804ac9ab5ed67c310912283.jpg',
+      weight: '3.5kg',
+
     },
     {
       id: '4',
@@ -129,6 +134,22 @@ export const images = [
       portType: 'type2',
       function: 'adapter',
       portType2: 'type1',
+      longDescription: `Introducing the Type 2 to Type 1 EV Adapter - your ultimate solution for seamless and hassle-free charging compatibility. Designed with precision and reliability in mind, this adapter is a game-changer for electric vehicle (EV) owners who want to bridge the gap between Type 2 and Type 1 charging standards.
+
+      The Type 2 to Type 1 EV Adapter is ingeniously engineered to ensure a secure and efficient connection between your Type 2 EV and Type 1 charging stations. No longer will you be limited by charging infrastructure or worry about compatibility issues. With this adapter, you can effortlessly tap into Type 1 charging networks and enjoy the convenience they offer.
+      
+      Crafted with utmost attention to detail, this adapter boasts exceptional build quality and durability. It is made using premium materials, ensuring that it can withstand the rigors of everyday use. Its ergonomic design guarantees a snug fit, eliminating any concerns about loose connections or interruptions during charging sessions. With this adapter, you can charge your Type 2 EV with confidence and peace of mind.
+      
+      The Type 2 to Type 1 EV Adapter is incredibly versatile, offering you the freedom to charge your EV wherever Type 1 charging stations are available. Whether you're embarking on a road trip, visiting a new city, or charging at a friend's place, this adapter enables you to make the most of the Type 1 charging infrastructure without any hassle. It opens up a world of possibilities for Type 2 EV owners, ensuring they never have to worry about finding compatible charging stations again.
+      
+      Using the Type 2 to Type 1 EV Adapter couldn't be easier. Its plug-and-play design allows for quick and straightforward installation, making it accessible to both experienced EV owners and newcomers alike. The compact size of the adapter ensures easy portability, enabling you to carry it conveniently in your glove compartment or EV storage compartment.
+      
+      Don't let charging compatibility limitations hold you back. Upgrade your Type 2 EV with the Type 2 to Type 1 EV Adapter and unlock a world of charging possibilities. Say goodbye to range anxiety and embrace the future of EV charging with this innovative and indispensable adapter.
+      
+      Note: The Type 2 to Type 1 EV Adapter is specifically designed for Type 2 electric vehicles and is not compatible with other EV charging standards. Please refer to your EV's specifications to ensure compatibility before purchase.`,
+        availablePorts: 'Type 2 to Type 1', 
+        illustration: 'https://d1gymyavdvyjgt.cloudfront.net/drive/images/uploads/headers/ws_cropper/1_0x0_790x520_0x520_ev-connector-type-2.jpg', 
+        illustration2: 'https://d1gymyavdvyjgt.cloudfront.net/drive/images/uploads/headers/ws_cropper/1_0x0_790x520_0x520_ev-connector-type-2.jpg',
     },
     {
       id: '5',
@@ -144,6 +165,19 @@ export const images = [
       portType: 'tesla',
       function: 'adapter',
       portType2: 'type1',
+      longDescription: `Introducing the Type 1 to Tesla EV Adapter - your ultimate solution for effortless and seamless charging compatibility. Designed with precision and innovation, this adapter is a game-changer for Type 1 electric vehicle (EV) owners who want to tap into the world of Tesla charging infrastructure.
+
+      Engineered to perfection, the Type 1 to Tesla EV Adapter is meticulously crafted to ensure a secure and reliable connection between your Type 1 EV and Tesla charging stations. With this adapter in your possession, you can bid farewell to any concerns about compatibility and enjoy the convenience of accessing Tesla's expansive Supercharger network.
+      
+      This adapter is a versatile companion, enabling Type 1 EV owners to connect effortlessly to the Tesla charging infrastructure. Whether you're embarking on a long road trip, exploring new destinations, or simply charging up at a local Tesla charging station, this adapter ensures that your Type 1 EV can make the most of the powerful and efficient Tesla charging technology.
+      
+      The Type 1 to Tesla EV Adapter boasts a robust build quality, incorporating premium materials that guarantee durability and longevity. Its ergonomic design ensures a snug fit, eliminating any worries of loose connections or interruptions during charging sessions. With this adapter by your side, you can enjoy peace of mind, knowing that your Type 1 EV is securely connected and charging efficiently.
+      
+      In addition to its practicality, the Type 1 to Tesla EV Adapter is incredibly user-friendly. Its intuitive plug-and-play design allows for quick and effortless installation, making it accessible to both seasoned EV owners and newcomers alike. The adapter's compact size ensures easy portability, allowing you to carry it conveniently in your glove compartment or EV storage compartment.
+      
+      Don't let compatibility limitations hinder your EV charging experience. Upgrade your Type 1 EV with the Type 1 to Tesla EV Adapter and unlock a world of charging possibilities. Say goodbye to range anxiety and embrace the future of EV charging with this innovative and indispensable adapter.
+      
+      Note: The Type 1 to Tesla EV Adapter is specifically designed for Type 1 electric vehicles and is not compatible with other EV charging standards. Please refer to your EV's specifications to ensure compatibility before purchase.`
     },
     {
         id: '6',
@@ -160,6 +194,7 @@ export const images = [
         portType: 'gbt',
         function: 'charger',
         portType2: 'none',
+        longDescription: ''
       },
       {
         id: '7',
@@ -176,6 +211,8 @@ export const images = [
         portType: 'type2',
         function: 'charger',
         portType2: 'none',
+        longDescription: ''
+
       },
       {
         id: '8',
@@ -192,6 +229,7 @@ export const images = [
         portType: 'type1',
         function: 'charger',
         portType2: 'tesla',
+        longDescription: ''
       },
       {
         id: '9',
@@ -208,7 +246,31 @@ export const images = [
         portType: 'gbt',
         function: 'adapter',
         portType2: 'tesla',
+        longDescription: ''
       },
+        {
+        id: '10',
+        name: 'Portable 7.7kW Electric Cars Charger',
+        currency: 'AED',
+        price: 1000,
+        flag: 'new',
+        imageUrl: 'https://iili.io/H4JwlS9.md.png',
+        rating: 4,
+        ratingCount: 14,
+        description:
+            'With this EV charger you can charge any EV car, this includes all Tesla models that were made in Europe, Audi, BMW, Mercedes, Porsche, Hunda, Kia, ID.4 and ID.6 and many more.',
+        images,
+        portType: 'type2',
+        function: 'charger',
+        portType2: 'gbt',
+        longDescription: 'This is a long description',
+        ports: [
+            { type: 'Type 2', image: 'https://iili.io/H4Jw19e.md.png' },
+            { type: 'GBT', image: 'https://iili.io/H4Jwcc7.md.png' },
+            { type: 'Type 1', image: 'https://iili.io/H4JwlS9.md.png' },
+        ]
+        },
+
   ];
   
   export const vehicles = [
@@ -229,6 +291,40 @@ export const images = [
         id: '3',
         brand: 'Mercedes',
         relatedProducts: ['1', '2', '3', '4'],
+        },
+
+    ]
+
+
+    export const blogPosts = [
+        {
+            id: '1',
+            title: 'How to charge your EV',
+            imageUrl: 'https://iili.io/H4Jw19e.md.png',
+            description: 'This is a description',
+            content: 'This is a content',
+            date: '2021-09-01',
+            contentImageUrl: 'https://iili.io/H4Jw19e.md.png',
+            comments: [
+                {
+                    id: '1',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+                {
+                    id: '2',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+                {
+                    id: '3',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+            ]
         },
 
     ]

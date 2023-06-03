@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MultiStep from './components/Multistep';
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 import Home from './components/Home';
 import NavBar from './components/NavBar';
@@ -15,9 +16,12 @@ import Type2 from './components/Type2';
 import Tesla from './components/Tesla';
 import Adapters from './components/Adapters';
 import ProductPage from './components/ProductPage';
+import BlogPost from './components/BlogPost';
+import Blog from './components/Blog';
 import NotFound from './components/404';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Fragment>
@@ -185,9 +189,18 @@ function App() {
               </Fragment>
             }
           />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/the-best-places-to-buy-ev-chargers-in-dubai" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-
+        <FloatingWhatsApp
+        phoneNumber="97150167410"
+        accountName="MEV Charger"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+      />
         <Footer />
       </Fragment>
     </BrowserRouter>

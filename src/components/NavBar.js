@@ -262,7 +262,7 @@ const NAV_ITEMS = [
 
   {
     label: 'Products',
-    href: '/products',
+    href: '#',
     children: [
       {
         label: 'Chargers',

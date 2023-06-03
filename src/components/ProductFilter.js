@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Box, Select, List, ListItem, Image, Text, Button, Link, } from '@chakra-ui/react';
+import { Box, Select, List, ListItem, Image, Text, Button, Link } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 const ProductFilter = ({ products, onFilterChange }) => {
   const [selectedPortType, setSelectedPortType] = useState('');
@@ -8,15 +9,18 @@ const ProductFilter = ({ products, onFilterChange }) => {
   const handlePortTypeChange = (event) => {
     const { value } = event.target;
     setSelectedPortType(value);
-    // routing should be here
-    console.log(products)
 
     if (value === '') {
       // If no port type is selected, show all products
       setFilteredProducts(products);
     } else {
       // Filter products based on selected port type
-      const filtered = products.filter((product) => product.portType === value || product.portType2 === value || product.portType3);
+      const filtered = products.filter(
+        (product) =>
+          product.portType === value ||
+          product.portType2 === value ||
+          product.portType3 === value
+      );
       setFilteredProducts(filtered);
     }
   };
@@ -37,7 +41,9 @@ const ProductFilter = ({ products, onFilterChange }) => {
         {filteredProducts.map((product) => (
           <ListItem key={product.id}>
             <Box display="flex" alignItems="center">
-              <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+              <Link as={RouterLink} to={`/products/${product.id}`}>
+                <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+              </Link>
               <Box ml={4}>
                 <Text fontWeight="bold">{product.name}</Text>
                 <Text>AED {product.price}</Text>
@@ -47,12 +53,11 @@ const ProductFilter = ({ products, onFilterChange }) => {
                   </Text>
                 )}
                 <Text>{product.description}</Text>
-                <Link  href='https://wa.me/971501679410'> 
-                <Button colorScheme="green" width="half" >
+                <Link href={`https://wa.me/971501679410?text=Hi,%20I%20would%20like%20to%20order%20${encodeURIComponent(product.name)}%20for%20AED%20${product.price}`} isExternal>
+                  <Button colorScheme="green" width="half">
                     Order on WhatsApp
-                </Button>
+                  </Button>
                 </Link>
-                
               </Box>
             </Box>
           </ListItem>
