@@ -68,8 +68,6 @@ export default function Simple() {
 
   return (
     <Container maxW={'7xl'}>
-      {/* add a meta description for the product page */}
-        
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
