@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   AspectRatio,
   Box,
@@ -21,10 +21,11 @@ export const ProductCard = (props) => {
   const { id, name, imageUrl, price, salePrice, ratingCount, rating } = product;
 
   const handleViewDetails = () => {
-    // Navigate to the ProductPage with the ID of the clicked product
-    // You can implement your navigation logic here
+    window.scrollTo(0, 0)
     console.log(`Navigating to product with ID: ${id}`);
   };
+
+
 
   return (
     <Stack
@@ -36,6 +37,9 @@ export const ProductCard = (props) => {
     >
       <Box position="relative">
         <AspectRatio ratio={4 / 4}>
+        {/* activite the useEffect to scroll to top */}
+        <Link as={RouterLink} to={`/products/${id}`} onClick={handleViewDetails}>
+
           <Image
             src={imageUrl}
             alt={name}
@@ -46,6 +50,7 @@ export const ProductCard = (props) => {
               md: 'xl',
             }}
           />
+          </Link>
         </AspectRatio>
         <FavouriteButton
           position="absolute"
