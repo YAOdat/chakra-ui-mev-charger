@@ -181,7 +181,7 @@ export const images = [
     },
     {
         id: '6',
-        name: 'Volkswagen ID4 & ID6 Wallbox EV Charger',
+        name: 'The best Volkswagen ID4 & ID6 Wallbox EV Charger',
         currency: 'AED',
         price: 1800,
         flag: 'new',
@@ -194,7 +194,25 @@ export const images = [
         portType: 'gbt',
         function: 'charger',
         portType2: 'none',
-        longDescription: ''
+        longDescription: `Introducing the ultimate charging solution for Volkswagen ID4 and ID6 electric vehicles—the Volkswagen ID4 & ID6 Wallbox EV Charger. This state-of-the-art charging device is designed to provide seamless and efficient charging for your Volkswagen electric vehicle, ensuring you enjoy maximum convenience and optimal performance.
+
+        The Volkswagen ID4 & ID6 Wallbox EV Charger is available in three power options to cater to your specific charging needs. The first option is the impressive 22 kW power variant, which delivers lightning-fast charging speeds, enabling you to charge your ID4 or ID6 battery to its full capacity in no time. This high-power option is perfect for those who require rapid charging capabilities, reducing downtime and allowing you to hit the road swiftly.
+        
+        The second power option is the 11 kW variant, which offers a balanced charging rate. It provides a commendable charging speed that efficiently replenishes your vehicle's battery while still being practical for everyday use. This option strikes a great balance between charging speed and power consumption, ensuring a reliable and efficient charging experience.
+        
+        For those seeking a more conservative charging solution without compromising on effectiveness, the Volkswagen ID4 & ID6 Wallbox EV Charger is also available in a 7 kW power option. This option suits users with lower power requirements, offering a slower yet steady charging rate that is suitable for overnight charging or longer parking durations. It is an ideal choice for residential settings or locations where charging time is not a critical factor.
+        
+        Regardless of the power variant you choose, the Volkswagen ID4 & ID6 Wallbox EV Charger is designed to provide a safe and user-friendly charging experience. It is equipped with advanced safety features such as built-in surge protection and overheat protection, ensuring the utmost safety for both your vehicle and the charging infrastructure.
+        
+        Moreover, the Volkswagen ID4 & ID6 Wallbox EV Charger boasts a sleek and compact design, blending seamlessly into any environment. Its intuitive interface and easy-to-use features make it convenient for both experienced electric vehicle owners and those new to the world of electric mobility.
+        
+        With the Volkswagen ID4 & ID6 Wallbox EV Charger, you can enjoy the convenience and peace of mind that come with owning an electric vehicle. It's a reliable and efficient charging solution that perfectly complements the exceptional performance and sustainability of the Volkswagen ID4 and ID6 models. Say goodbye to range anxiety and embrace the future of driving with the Volkswagen ID4 & ID6 Wallbox EV Charger.`,
+        availablePorts: 'GBT',
+        power: '7.7/ 11 / 22 kW',
+        cableLength: '3.5m',
+        weight: '4.5 kg',
+        illustration: 'https://www.automobile-magazine.fr/asset/cms/840x394/179434/config/128146/mg-6498.jpg',
+        illustration2:'https://iili.io/HrtH9iF.md.webp',
       },
       {
         id: '7',

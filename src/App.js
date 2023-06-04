@@ -19,9 +19,14 @@ import ProductPage from './components/ProductPage';
 import BlogPost from './components/BlogPost';
 import Blog from './components/Blog';
 import NotFound from './components/404';
+import ReactGA from 'react-ga';
+
 
 function App() {
   
+  ReactGA.initialize('G-09GTV1PCZ7');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <BrowserRouter>
       <Fragment>
