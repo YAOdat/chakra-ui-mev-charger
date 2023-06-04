@@ -303,8 +303,9 @@ export const images = [
             imageUrl: 'https://iili.io/H4Jw19e.md.png',
             description: 'This is a description',
             content: 'This is a content',
-            date: '2021-09-01',
+            date: '2023-02-04',
             contentImageUrl: 'https://iili.io/H4Jw19e.md.png',
+            tags: ['Volkswagen', 'ID.4', 'ID.6', 'Charging', 'Charging Settings'],
             comments: [
                 {
                     id: '1',
@@ -327,5 +328,60 @@ export const images = [
             ]
         },
 
+        {
+            id: '2',
+            title: 'How to turn slow charging mode in Volkswagen ID.4 and ID.6 off',
+            metaTitle: 'How to turn slow charging mode in Volkswagen ID.4 and ID.6 off',
+            imageUrl: 'https://assets.volkswagen.com/is/image/volkswagenag/VW_NGW6_Showroom_ID4_Collage_Interior?Zml0PWNyb3AlMkMxJndpZD04MDAmaGVpPTUzMyZmbXQ9anBlZyZxbHQ9NzkmYmZjPW9mZiYyOTg5',
+            description: 'Unlock Faster Charging: Troubleshoot Slow Charging for your ID.4 or ID.6. Learn how to deactivate the slow charging mode with simple steps and get back to efficient charging in no time.',
+            content: `How to Turn Off Slow Charging Mode in Volkswagen ID.4 and ID.6: Setting Charging Current
+
+            Introduction:
+            Efficient charging is crucial for electric vehicle owners, as it minimizes charging times and ensures a smooth driving experience. In some cases, the charging current may be reduced by default, leading to slow charging. However, Volkswagen provides a convenient solution to this issue through its charging settings. In this blog post, we will explore the steps to turn off the slow charging mode in Volkswagen ID.4 and ID.6 by adjusting the charging current setting.
+            
+            Step 1: Access the Car's Settings:
+            From the car's touch screen, navigate to the settings menu. This menu typically allows you to customize various aspects of your vehicle's functionality.
+            
+            Step 2: Open Charging Settings:
+            Within the settings menu, locate the charging settings option. This option enables you to modify the charging preferences and customize the charging behavior of your Volkswagen electric vehicle.
+            
+            Step 3: Find "Reduce AC Charging Current":
+            Within the charging settings menu, you will find an option called "Reduce AC charging current." This setting determines whether the charging current is limited to a lower level than the maximum available charging capacity.
+            
+            Step 4: Toggle Off "Reduce AC Charging Current":
+            If the "Reduce AC charging current" option is toggled on, it means that the charging current is being limited. To turn off the slow charging mode, simply toggle this option off. By doing so, you allow the vehicle to charge at the maximum charging current supported by the local power supply.
+
+            Here is a video showing how to complete the steps above: https://www.youtube.com/watch?v=yMAhpQ9XLXg
+            
+            Conclusion:
+            By following these simple steps, you can easily turn off the slow charging mode in your Volkswagen ID.4 or ID.6 electric vehicle. Adjusting the charging current setting ensures that your vehicle charges efficiently and reduces overall charging times. Remember to consult your vehicle's manual or reach out to a Volkswagen service center if you encounter any difficulties or have further questions about the charging process. Enjoy the convenience and reliability of fast charging for your Volkswagen electric vehicle.`,
+            date: '2021-09-01',
+            contentImageUrl: 'https://iili.io/H4Jw19e.md.png',
+            tags: ['Volkswagen', 'ID.4', 'ID.6', 'Charging', 'Charging Settings'],
+            comments: [
+                {
+                    id: '1',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+                {
+                    id: '2',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+                {
+                    id: '3',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+
+
     ]
+        },
+
+    ]
+
     

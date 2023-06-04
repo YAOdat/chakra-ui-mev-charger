@@ -190,11 +190,12 @@ function App() {
             }
           />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/the-best-places-to-buy-ev-chargers-in-dubai" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <FloatingWhatsApp
-        phoneNumber="97150167410"
+        phoneNumber="971501679410"
         accountName="MEV Charger"
         allowEsc
         allowClickAway
