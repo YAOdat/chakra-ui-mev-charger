@@ -58,7 +58,9 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }} alignItems="center">
+          <Link href="/">
   <img src={Logo} alt="MEV Charger" width={80} />
+ </Link>
   <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
     <DesktopNav />
   </Flex>

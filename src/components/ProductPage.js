@@ -221,6 +221,10 @@ export default function Simple() {
                 <Td>Cable Length</Td>
                 <Td>{product.cableLength}</Td>
               </Tr>
+                <Tr>
+                <Td>Power</Td>
+                <Td>{product.power}</Td>
+                </Tr>
             </Tbody>
           </Table>
         </Box>

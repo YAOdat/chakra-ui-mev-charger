@@ -55,9 +55,11 @@ EV Chargers            </Text>
               Buy Now
             </Button>
             </Link>
+            <Link to="/blog">
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
             </Button>
+            </Link>
             <Box>
               <Icon
                 as={Arrow}
