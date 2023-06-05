@@ -40,11 +40,11 @@ const ProductFilter = ({ products, onFilterChange }) => {
       <List>
         {filteredProducts.map((product) => (
           <ListItem key={product.id}>
-            <Box display="flex" alignItems="center">
+            <Box display="flex" flexDirection={['column', 'row']} alignItems={['start', 'center']}>
               <Link as={RouterLink} to={`/products/${product.id}`}>
                 <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
               </Link>
-              <Box ml={4}>
+              <Box ml={[0, 4]} mt={[4, 0]}>
                 <Text fontWeight="bold">{product.name}</Text>
                 <Text>AED {product.price}</Text>
                 {product.salePrice && (

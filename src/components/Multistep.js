@@ -148,7 +148,7 @@ const Form2 = () => {
         <SimpleGrid columns={4} spacing={10}>
           {/* make the car brands as icons when clicking the icon move to the next step */}
           <Link to="/products/GBT">
-            <Img width="225px" src={Volkswagen} alt="Volkswagen" onClick={() => handleCarClick('gbt')} />
+            <Img width="250px" src={Volkswagen} alt="Volkswagen" onClick={() => handleCarClick('gbt')} />
           </Link>
           <Img width="100px" src={Tesla} alt="Tesla" onClick={() => handleCarClick('tesla')} />
           <Link to="/products/type2"> 
@@ -158,8 +158,8 @@ const Form2 = () => {
           <Img width="75px" src={Mercedes} alt="Mercedes" onClick={() => handleCarClick('type2')} />
           </Link>
 
-          <Img width="75px" src={Nissan} alt="Nissan" ml={8} onClick={() => handleCarClick('chademo')} />
-          <Img width="100px" src={Hyundai} alt="Hyundai" onClick={() => handleCarClick('chademo')} />
+          <Img width="45px" src={Nissan} alt="Nissan" ml={8} onClick={() => handleCarClick('chademo')} />
+          <Img width="70px" src={Hyundai} alt="Hyundai" onClick={() => handleCarClick('chademo')} />
           <Img width="100px" src={Kia} alt="Kia" onClick={() => handleCarClick('chademo')} />
           <Link to="/products/type2"> 
           <Img width="100px" src={Renault} alt="Renault" />
@@ -168,7 +168,7 @@ const Form2 = () => {
           <Img width="100px" src={Jaguar} alt="Jaguar" ml={6} />
           </Link>
           <Link to="/products/type2"> 
-          <Img width="65px" src={Porsche} alt="Porsche" ml={5} />
+          <Img width="35px" src={Porsche} alt="Porsche" ml={5} />
           </Link>
           <Link to="/products/GBT">
           <Img width="100px" src={Changan} alt="Changan" onClick={() => handleCarClick('gbt')} />
