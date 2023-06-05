@@ -16,7 +16,9 @@ const Adapters = () => {
 
       {filteredProducts.map((product) => (
         <Box display="flex" flexDirection={['column', 'row']} alignItems={['start', 'center']} key={product.id} mb={5}>
+          <Link href={`/products/${product.id}`}>
           <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+          </Link>
           <Box ml={[0, 4]} mt={[4, 0]}>
             <Text fontWeight="bold">{product.name}</Text>
             <Text>AED {product.price}</Text>

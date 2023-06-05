@@ -59,6 +59,7 @@ export const images = [
       weight: '4-4.5 KG',
       cableLength: '3.5m',
       availablePorts: 'Type 2, Type 1, GBT',
+      power: '7.7 / 11 / 22 kW',
       metaDescription:
       'Discover our Wallbox EV Charger with versatile connectors and advanced features. Safely and conveniently charge your electric vehicle with our reliable and high-performance charger. Suitable for a wide range of EV models.',
     },
@@ -229,7 +230,8 @@ export const images = [
         portType: 'type2',
         function: 'charger',
         portType2: 'none',
-        longDescription: ''
+        longDescription: '',
+        current: '32 A',
 
       },
       {
@@ -247,7 +249,8 @@ export const images = [
         portType: 'type1',
         function: 'charger',
         portType2: 'tesla',
-        longDescription: ''
+        longDescription: '',
+        current: '32 A',
       },
       {
         id: '9',
@@ -259,12 +262,17 @@ export const images = [
         rating: 4,
         ratingCount: 14,
         description:
-          'With this adapater you can charge your ID.4, ID.6 or Changan with Tesla EV chargers.',
+          'With this adapater you can charge your Tesla with ID4, ID6, or Changan EV chargers.',
         images,
         portType: 'gbt',
         function: 'adapter',
         portType2: 'tesla',
-        longDescription: ''
+        longDescription: `The GB/T to Tesla Adapter is a convenient accessory that enables Tesla owners to charge their vehicles using ID4, ID6, or Changan EV chargers. This adapter serves as a bridge between the different charging standards, allowing Tesla owners to access a wider range of charging options. Whether you're on a road trip, visiting a location with limited charging infrastructure, or simply looking for more flexibility in charging your Tesla, this adapter ensures compatibility and convenience. With the GB/T to Tesla Adapter, you can confidently charge your Tesla using various chargers, expanding your charging options and enhancing your electric driving experience.`,
+        illustration: 'https://evee.com.au/blog/content/images/2021/08/commercialcharging-hero-desktop.jpeg',
+        illustration2:'https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/lectron_ccs_adapter.jpg',
+        availablePorts: 'GBT to Tesla',
+        weight: '0.5 kg',
+
       },
         {
         id: '10',
@@ -281,6 +289,7 @@ export const images = [
         portType: 'type2',
         function: 'charger',
         portType2: 'gbt',
+        current: '32 A',
         longDescription: 'This is a long description',
         ports: [
             { type: 'Type 2', image: 'https://iili.io/H4Jw19e.md.png' },
@@ -289,30 +298,31 @@ export const images = [
         ]
         },
 
+        {
+            id:'11',
+            name: 'CCS2 to GBT DC Adapter',
+            currency: 'AED',
+            price: 7000,
+            flag: 'new',
+            imageUrl: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/ouzhuanguo-4-.jpg',
+            rating: 5,
+            ratingCount: 3,
+            description: 'Fast charging DC adapter for Volkswagen ID4 and ID6.',
+            portType: 'type 2',
+            function: 'adapter',
+            longDescription: 'Fast Charging DC Adapter designed exclusively for the Volkswagen ID.4 and ID.6 models, and Changan. Engineered to deliver unparalleled efficiency and convenience, this adapter takes the hassle out of recharging your VW electric vehicle and any car with GBT charging port. You can charger your GBT car with type2 tesla charger like EU Tesla, BMW, Audi, Mercedes, Porsche, and many more electric vehicles with Type 2 charging port.',
+            illustration: 'https://www.midaevse.com/uploads/CCS2-GBT-Adapter.jpg',
+            illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
+            availablePorts: 'GBT',
+            current: '200 A',
+            operatingTemperature: '-30°C to +50°C',
+            weight: '2 kg',
+            power: '~50 kW',
+            cableLength: '-',
+        }
+
   ];
   
-  export const vehicles = [
-     {
-        id: '1',
-        brand: 'Tesla',
-        relatedProducts: ['5'],
-      
-     },
-
-        {
-        id: '2',
-        brand: 'Volkswagen',
-        relatedProducts: ['1', '2', '3', '4'],
-        },
-
-        {
-        id: '3',
-        brand: 'Mercedes',
-        relatedProducts: ['1', '2', '3', '4'],
-        },
-
-    ]
-
 
     export const blogPosts = [
         {
