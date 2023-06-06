@@ -14,6 +14,7 @@ import {
   Tr,
   Th,
   Td,
+  Link,
 } from '@chakra-ui/react';
 import { MdLocalShipping } from 'react-icons/md';
 import { useParams } from 'react-router-dom';
@@ -76,15 +77,18 @@ export default function Simple() {
         <Flex>
           <TransformWrapper>
             <TransformComponent>
+              <Link to={`/product/${product.id}`}>
               <img
                 src={
                   selectedColor?.imageUrl ||
                   selectedPort?.image ||
-                  product?.imageUrl
+                  product?.imageUrl ||
+                  product?.imageSource
                 } // Use selected color's or port's imageUrl, or product's imageUrl if there are no color or port options
                 alt="product image"
                 style={{ width: '100%', height: 'auto' }}
               />
+              </Link>
             </TransformComponent>
           </TransformWrapper>
         </Flex>

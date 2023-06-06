@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -48,13 +48,13 @@ export default function SmallWithSocial() {
         align={{ base: 'center', md: 'center' }}>
         <Text>© 2023 MEV Charger. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+          <SocialButton label={'Twitter'} href={'https://www.youtube.com/@EVChargersDubai'}>
+            <FaFacebook />
           </SocialButton>
           <SocialButton label={'YouTube'} href={'#'}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/mevchargers/'}>
             <FaInstagram />
           </SocialButton>
         </Stack>

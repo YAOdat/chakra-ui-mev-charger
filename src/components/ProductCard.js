@@ -17,7 +17,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props;
-  const { id, name, imageUrl, price, salePrice, ratingCount, rating } = product;
+  const { id, name, imageUrl, imageSource, price, salePrice, ratingCount, rating } = product;
 
   const handleViewDetails = () => {
     window.scrollTo(0, 0)
@@ -40,7 +40,7 @@ export const ProductCard = (props) => {
         <Link as={RouterLink} to={`/products/${id}`} onClick={handleViewDetails}>
 
           <Image
-            src={imageUrl}
+            src={imageUrl? imageUrl : imageSource}
             alt={name}
             draggable="false"
             fallback={<Skeleton />}

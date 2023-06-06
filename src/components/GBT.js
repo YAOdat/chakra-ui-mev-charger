@@ -18,7 +18,9 @@ const GBT = () => {
 
       {filteredProducts.map((product) => (
         <Box display="flex" flexDirection={flexDirection} alignItems="center" key={product.id} mb={5}>
+          <Link to={`./products/${product.id}`}> 
           <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+          </Link>
           <Box ml={4}>
             <Text fontWeight="bold">{product.name}</Text>
             <Text>AED {product.price}</Text>
