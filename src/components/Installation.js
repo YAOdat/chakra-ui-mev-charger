@@ -37,10 +37,11 @@ const NotAvailableAlert = () => {
 };
 
 const Form1 = ({ onNext }) => {
-    const handleClick = () => {
-      const isUAE = window.confirm("We only operate inside the UAE. Please, press OK if you are in the UAE, otherwise try again later");
-      if (isUAE) {
+    const handleClick = (value) => {
+      if (value === 'UAE') {
         onNext();
+      } else {
+        alert('Sorry, we only operate inside the UAE.');
       }
     };
   
@@ -55,9 +56,9 @@ const Form1 = ({ onNext }) => {
               <Img
                 width="100px"
                 src={UAE}
-                alt="Charger Icon"
-                value="charger"
-                onClick={handleClick}
+                alt="UAE EV Charger"
+                value="UAE"
+                onClick={() => handleClick('UAE')}
                 _hover={{ transform: 'scale(1.15)' }}
                 transition={'0.2s ease-in-out'}
                 cursor={'pointer'}
@@ -72,7 +73,8 @@ const Form1 = ({ onNext }) => {
                 width="90px"
                 src={Earth}
                 alt="Charger Icon"
-                onClick={handleClick}
+                value="Earth"
+                onClick={() => handleClick('Earth')}
                 _hover={{ transform: 'scale(1.15)' }}
                 transition={'0.2s ease-in-out'}
                 cursor={'pointer'}
@@ -86,6 +88,7 @@ const Form1 = ({ onNext }) => {
       </>
     );
   };
+  
   
 
 const Form2 = () => {

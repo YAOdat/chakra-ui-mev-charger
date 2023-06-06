@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MultiStep from './components/Multistep';
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
+import { Analytics } from '@vercel/analytics/react';
 
 import Home from './components/Home';
 import NavBar from './components/NavBar';
@@ -40,6 +41,7 @@ function App() {
             content="MEV Charger is a leading company specializing in the sale of electric vehicle (EV) chargers and EV products. We offer reliable and efficient charging infrastructure to support the global transition towards electric mobility."
           />
         </Helmet>
+        <Analytics />
 
         <NavBar />
 
