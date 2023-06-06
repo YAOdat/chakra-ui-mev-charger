@@ -20,13 +20,16 @@
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-zoom-pan-pinch": "^3.0.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xmlbuilder": "^15.1.1",
+    "xmlbuilder2": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-sitemap": "node sitemap.js"
   },
   "eslintConfig": {
     "extends": [

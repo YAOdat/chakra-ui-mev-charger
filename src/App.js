@@ -199,6 +199,7 @@ function App() {
               </Fragment>
             }
           />
+          <Route path="/products/adapters/dc" element={<Adapters />} />
           <Route path="/services/ev-charger-installation" element={<Installation />} />
           <Route path="/services/roadside-charging-service" element={<Emergency />} />
           <Route path='/services' element={<Services />} />
