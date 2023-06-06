@@ -225,6 +225,10 @@ export default function Simple() {
                 <Td>Power</Td>
                 <Td>{product.power}</Td>
                 </Tr>
+                <Tr>
+                <Td>Maximum Current</Td>
+                <Td>{product.current}</Td>
+                </Tr>
             </Tbody>
           </Table>
         </Box>

@@ -16,6 +16,9 @@ import Type2 from './components/Type2';
 import Tesla from './components/Tesla';
 import Adapters from './components/Adapters';
 import ProductPage from './components/ProductPage';
+import Services from './components/Services';
+import Installation from './components/Installation';
+import Emergency from './components/Emergency';
 import BlogPost from './components/BlogPost';
 import Blog from './components/Blog';
 import NotFound from './components/404';
@@ -194,6 +197,9 @@ function App() {
               </Fragment>
             }
           />
+          <Route path="/services/ev-charger-installation" element={<Installation />} />
+          <Route path="/services/roadside-charging-service" element={<Emergency />} />
+          <Route path='/services' element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/the-best-places-to-buy-ev-chargers-in-dubai" element={<BlogPost />} />

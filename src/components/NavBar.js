@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Flex,
@@ -23,12 +24,12 @@ import {
   MoonIcon,
 } from '@chakra-ui/icons';
 
-import {BsWhatsapp} from 'react-icons/bs';
+import { BsWhatsapp } from 'react-icons/bs';
 import Logo from './images/mevchargerslogo.png';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box>
@@ -57,15 +58,18 @@ export default function WithSubnavigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }} alignItems="center">
+        <Flex
+          flex={{ base: 2 }}
+          justify={{ base: 'center', md: 'start' }}
+          alignItems="center"
+        >
           <Link href="/">
-  <img src={Logo} alt="MEV Charger" width={80} />
- </Link>
-  <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-    <DesktopNav />
-  </Flex>
-</Flex>
-
+            <img src={Logo} alt="MEV Charger" width={80} />
+          </Link>
+          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <DesktopNav />
+          </Flex>
+        </Flex>
 
         <Stack
           flex={{ base: 1, md: 0 }}
@@ -83,15 +87,14 @@ export default function WithSubnavigation() {
             _hover={{
               bg: 'green.300',
             }}
-
           >
             <Icon as={BsWhatsapp} w={5} h={5} mr={3} />
-+971 501 679 410          </Button>
-     
+            +971 501 679 410
+          </Button>
 
-      <Button onClick={toggleColorMode}>
-        <MoonIcon/>
-      </Button>
+          <Button onClick={toggleColorMode}>
+            <MoonIcon />
+          </Button>
         </Stack>
       </Flex>
 
@@ -151,7 +154,7 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }) => {
+const DesktopSubNav = ({ label, href, subLabel, subChildren }) => {
   return (
     <Link
       href={href}
@@ -184,17 +187,23 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           <Icon color={'green.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
+
+      {subChildren && (
+        <Stack pl={4} mt={2}>
+          {subChildren.map((subChild) => (
+            <Link key={subChild.label} py={2} href={subChild.href}>
+              {subChild.label}
+            </Link>
+          ))}
+        </Stack>
+      )}
     </Link>
   );
 };
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      p={4}
-      display={{ md: 'none' }}
-    >
+    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -204,6 +213,7 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
+
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
@@ -217,10 +227,7 @@ const MobileNavItem = ({ label, children, href }) => {
           textDecoration: 'none',
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue('gray.600', 'gray.200')}
-        >
+        <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
           {label}
         </Text>
         {children && (
@@ -245,9 +252,17 @@ const MobileNavItem = ({ label, children, href }) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
+              <React.Fragment key={child.label}>
+                <Link py={2} href={child.href}>
+                  {child.label}
+                </Link>
+                {child.subChildren &&
+                  child.subChildren.map((subChild) => (
+                    <Link key={subChild.label} py={2} fontSize={13} href={subChild.href}>
+                      {subChild.label}
+                    </Link>
+                  ))}
+              </React.Fragment>
             ))}
         </Stack>
       </Collapse>
@@ -255,13 +270,12 @@ const MobileNavItem = ({ label, children, href }) => {
   );
 };
 
-const NAV_ITEMS = [
 
+const NAV_ITEMS = [
   {
     label: 'Home',
     href: '/',
   },
-
   {
     label: 'Products',
     href: '#',
@@ -275,6 +289,34 @@ const NAV_ITEMS = [
         label: 'Adapters',
         subLabel: 'Find the best EV adapter for your charger',
         href: '/products/adapters',
+        subChildren: [
+          {
+            label: 'AC Adapters',
+            subLabel: 'Find the best AC adapter for your charger',
+            href: '/products/adapters',
+          },
+          {
+            label: 'DC Adapters',
+            subLabel: 'Find the best DC adapter for your charger',
+            href: '/products/11',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Services',
+    href: '#',
+    children: [
+      {
+        label: 'Installation',
+        subLabel: 'Get your charger installed by our team',
+        href: '/services/ev-charger-installation',
+      },
+      {
+        label: 'Emergency Roadside Charging',
+        subLabel: 'If your battery died on the road, we can help',
+        href: '/services/roadside-charging-service',
       },
     ],
   },
@@ -297,89 +339,4 @@ const NAV_ITEMS = [
       },
     ],
   },
- 
- 
 ];
-
-// export default function WithSubnavigation() {
-//   const { isOpen, onToggle } = useDisclosure();
-
-//   return (
-//     <Box>
-//       <Flex
-//         bg={useColorModeValue('white', 'gray.800')}
-//         color={useColorModeValue('gray.600', 'white')}
-//         minH={'60px'}
-//         py={{ base: 2 }}
-//         px={{ base: 4 }}
-//         borderBottom={1}
-//         borderStyle={'solid'}
-//         borderColor={useColorModeValue('gray.200', 'gray.900')}
-//         align={'center'}
-//       >
-//         <Flex
-//           flex={{ base: 1, md: 'auto' }}
-//           ml={{ base: -2 }}
-//           display={{ base: 'flex', md: 'none' }}
-//         >
-//           <IconButton
-//             onClick={onToggle}
-//             icon={
-//               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-//             }
-//             variant={'ghost'}
-//             aria-label={'Toggle Navigation'}
-//           />
-//         </Flex>
-//         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-//           <Text
-//             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-//             fontFamily={'heading'}
-//             color={useColorModeValue('gray.800', 'white')}
-//           >
-//             Logo
-//           </Text>
-
-//           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-//             <DesktopNav />
-//           </Flex>
-//         </Flex>
-
-//         <Stack
-//           flex={{ base: 1, md: 0 }}
-//           justify={'flex-end'}
-//           direction={'row'}
-//           spacing={6}
-//         >
-//           <Button
-//             as={'a'}
-//             fontSize={'sm'}
-//             fontWeight={400}
-//             variant={'link'}
-//             href={'#'}
-//           >
-//             Sign In
-//           </Button>
-//           <Button
-//             as={'a'}
-//             display={{ base: 'none', md: 'inline-flex' }}
-//             fontSize={'sm'}
-//             fontWeight={600}
-//             color={'white'}
-//             bg={'pink.400'}
-//             href={'#'}
-//             _hover={{
-//               bg: 'pink.300',
-//             }}
-//           >
-//             Sign Up
-//           </Button>
-//         </Stack>
-//       </Flex>
-
-//       <Collapse in={isOpen} animateOpacity>
-//         <MobileNav />
-//       </Collapse>
-//     </Box>
-//   );
-// }
