@@ -14,7 +14,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { blogPosts } from './data/productdata';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const useColorModeValueWrapper = (lightValue, darkValue) => {
@@ -65,7 +65,7 @@ const ArticleList = () => {
           flexDirection={{ base: 'column', sm: 'row' }}
           justifyContent="space-between"
           key={post.id}
-          
+
         >
           <Box
             display="flex"
@@ -80,7 +80,7 @@ const ArticleList = () => {
               marginLeft={{ base: '0', sm: '5%' }}
               marginTop="5%"
             >
-<Link to={`/blog/${post.id}`} textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Link to={`/blog/${post.id}`} textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   borderRadius="lg"
                   src={post.imageUrl}
@@ -113,7 +113,7 @@ const ArticleList = () => {
           >
             <BlogTags tags={['EV chargers', 'Electric car']} />
             <Heading marginTop="1">
-            <Link to={`/blog/${post.id}`} textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Link to={`/blog/${post.id}`} textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 {post.title}
               </Link>
             </Heading>
@@ -123,7 +123,7 @@ const ArticleList = () => {
               color={('black.700', 'black.200')}
               fontSize="lg"
             >
-                {post.description.length > 165
+              {post.description.length > 165
                 ? `${post.description.slice(0, 165)}...`
                 : post.description}
             </Text>
@@ -155,17 +155,16 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <BlogTags tags={['EV Chargers', 'Dubai']} marginTop="3" />
+            </Link>
             <Heading fontSize="xl" marginTop="2">
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Some blog title
-              </Link>
+              <Link to={'./the-best-places-to-buy-ev-chargers-in-dubai'} textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                The Best Places to Buy EV Chargers in Dubai              </Link>
             </Heading>
+
             <Text as="p" fontSize="md" marginTop="2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              As the demand for electric vehicles (EVs) continues to rise, the need for reliable and efficient EV chargers is on the rise as well. Dubai, known for its commitment to sustainable living, has embraced the electric vehicle revolution with open arms. If you're an EV owner or planning to become one, it's crucial to have access to high-quality EV chargers. In this blog post, we will explore the two best places to buy EV chargers in Dubai
             </Text>
             <BlogAuthor
               name="MEV Charger"
@@ -177,12 +176,12 @@ const ArticleList = () => {
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
         <Heading as="h2">MEV Charger Blog</Heading>
         <Text as="p" fontSize="lg">
-        Welcome to the MEV Chargers Blog, your go-to destination for all things related to Electric Vehicle (EV) chargers. Whether you're a proud EV owner, an industry professional, or simply interested in the future of sustainable transportation, this blog is designed to provide you with valuable insights, updates, and expert advice on EV charging technologies, trends, and best practices. Join us as we delve into the world of EV chargers and explore the latest advancements shaping the electric mobility landscape.
+          Welcome to the MEV Chargers Blog, your go-to destination for all things related to Electric Vehicle (EV) chargers. Whether you're a proud EV owner, an industry professional, or simply interested in the future of sustainable transportation, this blog is designed to provide you with valuable insights, updates, and expert advice on EV charging technologies, trends, and best practices. Join us as we delve into the world of EV chargers and explore the latest advancements shaping the electric mobility landscape.
 
 
         </Text>
         <Text as="p" fontSize="lg">
-        MEV Chargers Blog is your one-stop destination for everything you need to know about EV chargers. Whether you're seeking industry insights, practical advice, or detailed product information, we've got you covered. Join our growing community of EV enthusiasts and stay informed about the latest advancements in electric vehicle charging. Embrace the green revolution with MEV Chargers Blog and be a part of the sustainable future of transportation.
+          MEV Chargers Blog is your one-stop destination for everything you need to know about EV chargers. Whether you're seeking industry insights, practical advice, or detailed product information, we've got you covered. Join our growing community of EV enthusiasts and stay informed about the latest advancements in electric vehicle charging. Embrace the green revolution with MEV Chargers Blog and be a part of the sustainable future of transportation.
 
 
 

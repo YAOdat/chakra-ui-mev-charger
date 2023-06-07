@@ -9,6 +9,8 @@ const routes = [
   '/products',
   '/products/chargers',
   '/blog',
+  '/blog/1',
+'/blog/2',
   '/pick',
   '/products/type1',
   '/products/type2',

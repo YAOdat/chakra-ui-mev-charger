@@ -304,7 +304,7 @@ export const images = [
             currency: 'AED',
             price: 7000,
             flag: 'new',
-            imageUrl: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/ouzhuanguo-4-.jpg',
+            imageSource: require('../images/product-images/DCAdapter.webp'),
             rating: 5,
             ratingCount: 3,
             description: 'Fast charging DC adapter for Volkswagen ID4 and ID6.',
