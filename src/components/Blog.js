@@ -168,7 +168,7 @@ const ArticleList = () => {
             </Text>
             <BlogAuthor
               name="MEV Charger"
-              date={new Date('2021-04-06T19:01:27Z')}
+              date={new Date('2022-05-06T19:01:27Z')}
             />
           </Box>
         </WrapItem>

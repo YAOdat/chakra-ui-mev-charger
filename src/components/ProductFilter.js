@@ -40,7 +40,7 @@ const ProductFilter = ({ products, onFilterChange }) => {
       <List>
         {filteredProducts.map((product) => (
           <ListItem key={product.id}>
-            <Box display="flex" flexDirection={['column', 'row']} alignItems={['start', 'center']}>
+            <Box display="flex" flexDirection={['column', 'row']} alignItems={['start', 'center']} ml={4}>
               <Link as={RouterLink} to={`/products/${product.id}`}>
                 <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
               </Link>
@@ -54,7 +54,7 @@ const ProductFilter = ({ products, onFilterChange }) => {
                 )}
                 <Text>{product.description}</Text>
                 <Link href={`https://wa.me/971501679410?text=Hi,%20I%20would%20like%20to%20order%20${encodeURIComponent(product.name)}%20for%20AED%20${product.price}`} isExternal>
-                  <Button colorScheme="green" width="half">
+                  <Button colorScheme="green" width="half" mt={2}>
                     Order on WhatsApp
                   </Button>
                 </Link>
