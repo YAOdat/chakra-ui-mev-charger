@@ -156,7 +156,7 @@ export const images = [
       id: '5',
       name: 'Type 1 to Tesla EV Adapter',
       price: 400,
-      currency: 'GBP',
+      currency: 'AED',
       imageUrl: 'https://iili.io/HrEn199.md.jpg',
       rating: 5,
       ratingCount: 4,
@@ -249,8 +249,12 @@ export const images = [
         portType: 'type1',
         function: 'charger',
         portType2: 'tesla',
-        longDescription: '',
+        longDescription: 'For 1800 AED you can get this charger which comes in Type 1 with a Tesla adapter. This charger is compatible with all Tesla models. Also, it can charge type 1 EVs as the charger comes with a type 1 port and tesla adapter. This product saves a lot of money and provides a very wide range of charging options. The charger also has a safety button for emergency cases. Also this ev charger is easy to install and use.',
         current: '32 A',
+        cableLength: '3.5m',
+        weight: '4.5 kg',
+        illustration: 'https://e3.365dm.com/22/09/2048x1152/skynews-electric-car-tesla-vehicle_5911044.jpg',
+
       },
       {
         id: '9',
@@ -259,14 +263,15 @@ export const images = [
         price: 450,
         flag: 'new',
         imageUrl: 'https://iili.io/HregvLP.md.png',
+        imageAlt: 'GB/T to Tesla Adapter',
         rating: 4,
         ratingCount: 14,
         description:
           'With this adapater you can charge your Tesla with ID4, ID6, or Changan EV chargers.',
         images,
-        portType: 'gbt',
+        portType: 'tesla',
         function: 'adapter',
-        portType2: 'tesla',
+        portType2: 'none',
         longDescription: `The GB/T to Tesla Adapter is a convenient accessory that enables Tesla owners to charge their vehicles using ID4, ID6, or Changan EV chargers. This adapter serves as a bridge between the different charging standards, allowing Tesla owners to access a wider range of charging options. Whether you're on a road trip, visiting a location with limited charging infrastructure, or simply looking for more flexibility in charging your Tesla, this adapter ensures compatibility and convenience. With the GB/T to Tesla Adapter, you can confidently charge your Tesla using various chargers, expanding your charging options and enhancing your electric driving experience.`,
         illustration: 'https://evee.com.au/blog/content/images/2021/08/commercialcharging-hero-desktop.jpeg',
         illustration2:'https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/lectron_ccs_adapter.jpg',
@@ -305,6 +310,7 @@ export const images = [
             price: 7000,
             flag: 'new',
             imageSource: require('../images/product-images/DCAdapter.webp'),
+            imageAlt: 'DC Adapter',
             rating: 5,
             ratingCount: 3,
             description: 'Fast charging DC adapter for Volkswagen ID4 and ID6.',
@@ -313,13 +319,72 @@ export const images = [
             longDescription: 'Fast Charging DC Adapter designed exclusively for the Volkswagen ID.4 and ID.6 models, and Changan. Engineered to deliver unparalleled efficiency and convenience, this adapter takes the hassle out of recharging your VW electric vehicle and any car with GBT charging port. You can charger your GBT car with type2 tesla charger like EU Tesla, BMW, Audi, Mercedes, Porsche, and many more electric vehicles with Type 2 charging port.',
             illustration: 'https://www.midaevse.com/uploads/CCS2-GBT-Adapter.jpg',
             illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
-            availablePorts: 'GBT',
+            availablePorts: 'gbt',
             current: '200 A',
             operatingTemperature: '-30°C to +50°C',
             weight: '2 kg',
             power: '~50 kW',
             cableLength: '-',
-        }
+        },
+
+        {
+            id:'12',
+            name: 'GBT to GBT AC Adapter',
+            currency: 'AED',
+            price: 350,
+            flag: 'new',
+            imageSource: require('../images/product-images/GBTtoGBT.jpg'),
+            imageAlt: 'GBT to GBT AC Adapter',
+            rating: 5,
+            ratingCount: 3,
+            description: 'Charge your Volkswagen ID4 and ID6 with Type 2  AC chargers.',
+            portType: 'gbt',
+            function: 'adapter',
+            longDescription: 'By possessing this GBT to GBT adapter, you can charge your Volkswagen ID4 and ID6 with Type 2 AC chargers. This adapter is compatible with all Type 2 AC chargers. That means you can charge your EV with EU Tesla charger, BMW charger, Audi charger, Mercedes charger, and many more. With this adapter, you can now unlock more charging options for your Volkswagen ID4 and ID6 or any car with GB/T charging port.',
+            weight: '0.5 kg',
+            availablePorts: 'GBT',
+            current: '32 A',
+            power: '7.7 kW',
+            operatingTemperature: '-30°C to +50°C',
+            cableLength: '-',
+            illustration: require('../images/product-images/GBT2GBT.webp'),
+            illustration2: 'https://www.akyga.com/upl/app/products/images2/big-webp/dd106aec8f6ad2582c4bf459534ee3c0.webp.jpg',
+        },
+
+        {
+            id:'13',
+            name: '3 Phase 22kW Electric Cars Charger',
+            currency: 'AED',
+            price: 1850,
+            flag: 'new',
+            imageSource: require('../images/product-images/white-ev-charger.webp'),
+            imageAlt: '3 phase 22 kW ev charger',
+            rating: 5,
+            ratingCount: 3,
+            description: 'Charge your Volkswagen ID4 and ID6 with Type 2  AC chargers.',
+            portType: 'gbt',
+            function: 'charger',
+            longDescription: 'By possessing this GBT to Type 2 adapter, you can charge your Volkswagen ID4 and ID6 with Type 2 AC chargers. This adapter is compatible with all Type 2 AC chargers. That means you can charge your EV with EU Tesla charger, BMW charger, Audi charger, Mercedes charger, and many more. With this adapter, you can now unlock more charging options for your Volkswagen ID4 and ID6 or any car with GB/T charging port.',
+            weight: '0.5 kg',
+            availablePorts: 'GBT, Type 2, Type 1',
+            current: '32 A',
+            power: '7.7 kW, 11 kW, 22 kW',
+            operatingTemperature: '-30°C to +50°C',
+            cableLength: '5m, 10m, 15m',
+            inputVoltage: 'AC220V±15%',
+            inputFrequency: '50Hz',
+            operatingTemperature:'-30℃C~+55℃',
+            color: [
+                { name: 'white', imageUrl: require('../images/product-images/white-ev-charger.webp') },
+                { name: 'black', imageUrl: require('../images/product-images/black-ev-charger.webp') },
+                { name: 'blue', imageUrl: require('../images/product-images/blue-ev-charger.webp') },
+                { name: 'gray', imageUrl: require('../images/product-images/gray-ev-charger.webp') },
+
+            ],
+            
+            illustration: require('../images/product-images/white-ev-charger.webp'),
+            illustration2: 'https://www.akyga.com/upl/app/products/images2/big-webp/dd106aec8f6ad2582c4bf459534ee3c0.webp.jpg',
+        },
 
   ];
   
@@ -410,6 +475,28 @@ export const images = [
     ]
         },
 
+        {
+            id: '3',
+            title: 'Dubai EV Charger WhatsApp Group',
+            imageUrl: require('../images/WhatsApp/WhatsApp.png'),
+            description: 'Join our WhatsApp group to get the latest updates on EV chargers in Dubai',
+            content: 'You can join our WhatsApp group by clicking on the link below: https://chat.whatsapp.com/EXvSp6dG0WMFYjuFt2EEVz',
+            date: '2021-09-01',
+            contentImageUrl: 'https://iili.io/H4Jw19e.md.png',
+            tags: ['Volkswagen', 'ID.4', 'ID.6', 'Charging', 'WhatsApp'],
+            comments: [
+                {
+                    id: '1',
+                    name: 'John Doe',
+                    comment: 'This is a comment',
+                    date: '2021-09-01',
+                },
+          
+            
+
     ]
+        },
+      ];
+
 
     

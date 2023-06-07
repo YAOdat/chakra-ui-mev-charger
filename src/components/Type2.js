@@ -10,15 +10,17 @@ const Type2 = () => {
 
   return (
     <Box>
-      <Button colorScheme='green' m={2}>
+      <Button colorScheme='green' m={2} >
         <Link href="/pick">
           <Icon as={FaBackward} m={1}/>
         </Link>
       </Button>
 
       {filteredProducts.map((product) => (
-        <Box display="flex" flexDirection={flexDirection} alignItems="center" key={product.id} mb={5}>
+        <Box display="flex" flexDirection={flexDirection} alignItems="center" key={product.id} mb={5} ml={6}>
+      <Link href={`./${product.id}`}> 
           <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+          </Link>
           <Box ml={4}>
             <Text fontWeight="bold">{product.name}</Text>
             <Text>AED {product.price}</Text>
@@ -27,7 +29,7 @@ const Type2 = () => {
                 AED {product.salePrice}
               </Text>
             )}
-            <Text>{product.description}</Text>
+            <Text mb={2}>{product.description}</Text>
             <Link href="https://wa.me/971501679410">
               <Button colorScheme="green" width="half">
                 Order on WhatsApp

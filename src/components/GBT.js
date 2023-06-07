@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Text, Button, Link, Icon, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Image, Text, Button, Link, Icon, useBreakpointValue, Heading } from '@chakra-ui/react';
 import { products } from './data/productdata';
 import { FaBackward } from 'react-icons/fa';
 
@@ -10,6 +10,10 @@ const GBT = () => {
 
   return (
     <Box>
+       <Heading as='h1' size='1xl' noOfLines={1}>
+        Find the best VW/Changan charger for your vehicle.
+      </Heading>
+
       <Button colorScheme='green' m={2}>
         <Link href="/pick">
           <Icon as={FaBackward} m={1}/>
@@ -18,8 +22,8 @@ const GBT = () => {
 
       {filteredProducts.map((product) => (
         <Box display="flex" flexDirection={flexDirection} alignItems="center" key={product.id} mb={5}>
-          <Link to={`./products/${product.id}`}> 
-          <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+          <Link href={`./${product.id}`}> 
+          <Image src={product.imageUrl? product.imageUrl : product.imageSource} alt={product.name} boxSize="300px" objectFit="cover" />
           </Link>
           <Box ml={4}>
             <Text fontWeight="bold">{product.name}</Text>
@@ -29,7 +33,7 @@ const GBT = () => {
                 AED {product.salePrice}
               </Text>
             )}
-            <Text>{product.description}</Text>
+            <Text mb={2}>{product.description}</Text>
             <Link href="https://wa.me/971501679410">
               <Button colorScheme="green" width="half">
                 Order on WhatsApp
