@@ -62,10 +62,6 @@ export default function Simple() {
 
   return (
     <Container maxW={'7xl'}>
-      <Helmet>
-        <meta name="description" content={metaDescription} />
-      </Helmet>
-
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
