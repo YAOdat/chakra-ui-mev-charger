@@ -13,6 +13,7 @@ const MapComponent = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        className='google-map-iframe'
       ></iframe>
     </div>
   );
