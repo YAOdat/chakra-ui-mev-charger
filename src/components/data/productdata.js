@@ -309,6 +309,7 @@ export const images = [
             currency: 'AED',
             price: 7000,
             flag: 'new',
+            imageUrl: require('../images/product-images/DCAdapter.webp'),
             imageSource: require('../images/product-images/DCAdapter.webp'),
             imageAlt: 'DC Adapter',
             rating: 5,

@@ -238,6 +238,11 @@ export default function Simple() {
               )}
             </Tbody>
           </Table>
+          {product.illustration2 && (
+            <Link href={`/products/${product.id}`}>
+          <img src={product.illustration2} alt={product.name} />
+          </Link>
+          )}
         </Box>
       </SimpleGrid>
     </Container>

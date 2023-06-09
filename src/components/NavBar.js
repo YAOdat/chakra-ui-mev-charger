@@ -15,6 +15,7 @@ import {
   useColorModeValue,
   useDisclosure,
   useColorMode,
+  Image,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -26,10 +27,15 @@ import {
 
 import { BsWhatsapp } from 'react-icons/bs';
 import Logo from './images/mevchargerslogo.png';
+import ArabicLanguage from './images/Icon Images/arabic-language.png';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const toggleLanguageChange = () => {
+    window.location.href = "https://ar.mevcharger.com";
+  };
 
   return (
     <Box>
@@ -95,6 +101,9 @@ export default function WithSubnavigation() {
           <Button onClick={toggleColorMode}>
             <MoonIcon />
           </Button>
+          <Link as={Button} onClick={toggleLanguageChange} mr={1}>
+            اللغة العربية 
+          </Link>
         </Stack>
       </Flex>
 
@@ -213,7 +222,6 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
-
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>

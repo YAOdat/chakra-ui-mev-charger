@@ -42,7 +42,8 @@ const ProductFilter = ({ products, onFilterChange }) => {
           <ListItem key={product.id}>
             <Box display="flex" flexDirection={['column', 'row']} alignItems={['start', 'center']} ml={4}>
               <Link as={RouterLink} to={`/products/${product.id}`}>
-                <Image src={product.imageUrl} alt={product.name} boxSize="300px" objectFit="cover" />
+                {console.log(product.imageSource)}
+                <Image src={product.imageUrl? product.imageUrl : product.imageSource} alt={product.name} boxSize="300px" objectFit="cover" />
               </Link>
               <Box ml={[0, 4]} mt={[4, 0]}>
                 <Text fontWeight="bold">{product.name}</Text>
