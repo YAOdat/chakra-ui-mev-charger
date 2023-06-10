@@ -101,8 +101,8 @@ export default function WithSubnavigation() {
           <Button onClick={toggleColorMode}>
             <MoonIcon />
           </Button>
-          <Link as={Button} onClick={toggleLanguageChange} mr={1}>
-            اللغة العربية 
+          <Link as={Button} onClick={toggleLanguageChange}>
+            <Image src={ArabicLanguage} alt="Arabic Language" width={25} />
           </Link>
         </Stack>
       </Flex>
