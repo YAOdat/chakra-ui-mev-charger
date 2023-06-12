@@ -18,6 +18,7 @@ import Tesla from './components/Tesla';
 import Adapters from './components/Adapters';
 import ProductPage from './components/ProductPage';
 import Services from './components/Services';
+import Links from './components/Links';
 import Installation from './components/Installation';
 import Emergency from './components/Emergency';
 import BlogPost from './components/BlogPost';
@@ -200,6 +201,7 @@ function App() {
               </Fragment>
             }
           />
+          <Route path="/links" element={<Links />} />
           <Route path="/products/adapters/dc" element={<Adapters />} />
           <Route path="/services/ev-charger-installation" element={<Installation />} />
           <Route path="/services/roadside-charging-service" element={<Emergency />} />
