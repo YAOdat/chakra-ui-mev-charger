@@ -26,9 +26,15 @@
 }
 
 .card-title {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
+  font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  color: #48BB78;
+  text-shadow: black 0.01em 0.01em 0.01em;
+  color: linear-gradient(90deg, #36652d 0, #226627 58%);
 }
 
 .subHeading-card {
@@ -80,3 +86,29 @@
     height: auto;
   }
 }
+
+
+#card-dark {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+#card-title-dark {
+  color: #5dd844;
+  color: linear-gradient(90deg, #459435 0, #226627 58%);
+  text-shadow: black 0.01em 0.01em 0.01em;
+}
+
+#card-content-dark {
+  color: white;
+  color: linear-gradient(90deg, #459435 0, #226627 58%);
+  text-shadow: black 0.01em 0.01em 0.01em;
+}
+
+#glass-body-dark {
+  background: #1a202c;
+  background: linear-gradient(90deg, #1a202c 0, #333d4e 58%);
+}
+

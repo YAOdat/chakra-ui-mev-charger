@@ -347,7 +347,6 @@ export const images = [
             current: '32 A',
             power: '7.7 kW',
             operatingTemperature: '-30°C to +50°C',
-            cableLength: '-',
             illustration: require('../images/product-images/GBT2GBT.webp'),
             illustration2: 'https://www.akyga.com/upl/app/products/images2/big-webp/dd106aec8f6ad2582c4bf459534ee3c0.webp.jpg',
         },
@@ -386,6 +385,35 @@ export const images = [
             illustration: require('../images/product-images/white-ev-charger.webp'),
             illustration2: 'https://www.akyga.com/upl/app/products/images2/big-webp/dd106aec8f6ad2582c4bf459534ee3c0.webp.jpg',
         },
+        
+          {
+            id:'14',
+            name: 'Tesla Car Diagnostic Scanner',
+            currency: 'AED',
+            price: 10250,
+            flag: 'new',
+            imageUrl: require('../images/product-images/tesla-ev-scanner.jpg'), 
+            rating: 5,
+            ratingCount: 1,
+            description: 'D9 EV Professional EV Smart Diagnostic System, a high-performance 9.7-inch tablet that supports Bluetooth communication, DoIP, and CAN-FD protocols. With online software updates and compatibility with most Tesla EV models, it offers comprehensive diagnostic functions including battery pack detection, Tesla diagnosis, ECU information reading, DTC clearing, live data analysis, and over 40 special functions. Plus, it provides IMMO support for added security. Stay ahead with the D9 EV and unlock the full potential of electric vehicle diagnostics. ',
+            longDescription: `Introducing the D9 EV Professional EV Smart Diagnostic System, the ultimate companion for all your electric vehicle diagnostic needs. Engineered for excellence, this powerful tablet boasts a 9.7-inch display, delivering high performance and durability to ensure a long-lasting diagnostic experience.
+
+            With its cutting-edge technology, the D9 EV system supports Bluetooth communication, allowing seamless connectivity with various devices. It goes above and beyond by supporting both the DoIP protocol and CAN-FD protocol, ensuring compatibility with a wide range of electric vehicle models.
+            
+            The D9 EV is your go-to solution for diagnosing electric vehicles, as it supports a vast majority of EV models currently available in the market. Stay up-to-date with the latest advancements in the industry, as all software, including the app, diagnostic software, and operating system, can be easily updated online. Experience convenience like never before!
+            
+            Equipped with an array of diagnostic functions, the D9 EV offers comprehensive support for all your diagnostic needs. From battery pack detection to specialized Tesla diagnosis, this system covers it all. Effortlessly access essential ECU information, effortlessly read and clear DTCs, and obtain real-time live data for a complete analysis of your EV's performance. Furthermore, take advantage of over 40 special functions, ensuring that no diagnostic challenge is left unanswered.
+            
+            For added security, the D9 EV also supports IMMO function, safeguarding your electric vehicle against unauthorized access. Rest easy knowing that your vehicle is protected by state-of-the-art diagnostic technology.
+            
+            In conclusion, the D9 EV Professional EV Smart Diagnostic System is your reliable companion for diagnosing and maintaining electric vehicles. Its high-performance tablet, versatile protocol support, and extensive diagnostic functions make it a valuable asset for professionals in the industry. Stay ahead of the game with this exceptional diagnostic system and ensure optimal performance for your electric vehicle fleet.`,
+            portType: 'none',
+            function: 'scanner',
+            illustration: 'https://www.midaevse.com/uploads/CCS2-GBT-Adapter.jpg',
+            illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
+        
+        },
+        
 
   ];
   
@@ -393,12 +421,21 @@ export const images = [
     export const blogPosts = [
         {
             id: '1',
-            title: 'How to charge your EV',
-            imageUrl: 'https://iili.io/H4Jw19e.md.png',
-            description: 'This is a description',
-            content: 'This is a content',
-            date: '2023-02-04',
-            contentImageUrl: 'https://iili.io/H4Jw19e.md.png',
+            title: 'Volkswagen ID.4 Charging Time: How Long Does It Take to Charge from 0% to 100%?', 
+            imageUrl: 'https://di-uploads-pod20.dealerinspire.com/southerngreenbriervolkswagen/uploads/2021/06/2021-VW-ID4-Chaqrging.jpg',       
+            description: `Discover the Volkswagen ID.4 Charging Time: How long does it take to charge from 0% to 100%? The Volkswagen ID.4 has emerged as one of the top electric vehicle offerings in 2021. In this comprehensive test, we drained the ID.4's battery and charged it to full capacity using a 150 kW DC fast charger. With an 82 kWh battery and a peak charging rate of 125 kW (which reached 131 kW in our test), the ID.4 achieved impressive charging speeds. It took only 12 minutes to charge up to 30% and 40% in just 16 minutes, adding 100 miles of driving range. At 80% state of charge, it replenished 200 miles in 40 minutes. We observed a remarkable average power intake of 110 kW, nearly 90% of its stated peak charging rate. Join us as we delve into the ID.4's charging capabilities and learn about potential upgrades to its maximum charge rate. Watch the video and share your thoughts on the ID.4's exceptional charging performance.`,
+            content: `The Volkswagen ID.4 has garnered considerable admiration as one of the most captivating electric vehicle offerings in 2021. In our pursuit of comprehensive testing, we recently conducted a DC fast charging experiment on an ID.4 First Edition, depleting its battery to zero and subsequently replenishing it to full capacity using an Electrify America 150 kW DC fast charger.\n
+            Equipped with an 82 kWh battery, with 77 kWh being usable, the ID.4 boasts a peak charging rate of 125 kW, though our examination revealed a peak rate of 131 kW. Remarkably, the ID.4 consistently maintained a charging speed of 123 kW or higher until it reached the 30% state of charge, taking a mere 12 minutes to achieve this milestone.\n
+            Within 16 minutes, the ID.4 attained a 40% state of charge, restoring approximately 100 miles of driving range, based on the EPA's range rating of 250 miles. Alternatively, adhering to the InsideEVs 70-mph range test results, it required a brisk 17 minutes to achieve the same feat. Subsequently, the vehicle reached the 50% state of charge in 20 minutes, while the 80% state of charge was achieved within 40 minutes, consuming 67 kWh of energy. Notably, during the initial charging phase from 0% to 80%, the ID.4 displayed an average power intake of 110 kW, amounting to almost 90% (88% precisely) of its stated peak charging rate, demonstrating commendable efficiency.\n
+            Upon reaching the 80% state of charge, the ID.4 had replenished an estimated 200 miles of driving range according to the EPA range rating. However, our range test results indicated an additional 5 minutes of charging was needed to reach an 85% state of charge (totaling 45 minutes) and restore the same 200 miles of range.\n
+            Similar to all electric vehicles, the charge rate diminishes significantly once the state of charge reaches 80%, dropping from 69 kW at 80% SOC to a mere 41 kW at 90%. After one hour, the ID.4 attains a 97% state of charge and subsequently takes an additional 5 minutes to reach a full 100% charge.\n
+            An intriguing observation during the charging session was that the charging station's display indicated 99% charge completion, whereas the ID.4's internal display confirmed a full 100% charge.\n
+            Although we have previously conducted charging tests on the ID.4, we retested the vehicle for the sake of meticulous verification and to capture a complete recording. Duplicate testing ensures the reliability and accuracy of our results. Additionally, our colleague, Mark Kane, has compiled an insightful ID.4 DC fast charging analysis, incorporating data from Kyle and me, as well as other relevant sources, such as YouTube-based ID.4 charging DC fast charge recordings.\n
+            While the ID.4 may not be the absolute fastest-charging EV, it undeniably stands out as one of the top contenders, particularly when considering its attractive starting price of $39,995 in the US. Our colleague Kyle recently embarked on an ID.4 road trip from Florida to Colorado and was immensely impressed by its charging speed. It is worth noting that Kyle is widely recognized as one of the most experienced EV road-trippers in our network.\n
+            Moreover, the ID.4's charging capabilities are poised to improve further in the near future. We have received information indicating that Volkswagen plans to enhance the ID.4's maximum charge rate from 125 kW to 175 kW through an over-the-air (OTA) software update. However, the duration for which the vehicle can sustain this elevated charging rate remains uncertain. As we have emphasized on multiple occasions, the average power delivery holds greater significance than the peak power rate. Should this upgrade materialize, we will conduct another charging session with the updated ID.4 to document the results.\n
+            We encourage you to watch the accompanying video and share your thoughts. Do you concur that the ID.4 exhibits exceptional charging capabilities? Alternatively, would an increase in the maximum charging rate to 175 kW alter your perception? Please leave your feedback in the comment section below.`,
+            date: '2023-03-04',
+            contentImageUrl: 'https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20200923085110_Volkswagen-ID4-003.jpg&w=700&q=90&c=1',
             tags: ['Volkswagen', 'ID.4', 'ID.6', 'Charging', 'Charging Settings'],
             comments: [
                 {

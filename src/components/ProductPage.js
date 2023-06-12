@@ -90,7 +90,7 @@ export default function Simple() {
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              as='h2'
+              as='h1'
               fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}
             >
               {product.name}

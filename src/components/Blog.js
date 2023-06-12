@@ -84,7 +84,7 @@ const ArticleList = () => {
                 <Image
                   borderRadius="lg"
                   src={post.imageUrl}
-                  alt="some good alt text"
+                  alt={post.title}
                   objectFit="contain"
                   _hover={{
                     transform: 'scale(1.04)',
