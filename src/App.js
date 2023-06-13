@@ -23,6 +23,7 @@ import Installation from './components/Installation';
 import Emergency from './components/Emergency';
 import BlogPost from './components/BlogPost';
 import Blog from './components/Blog';
+import PostPage from './components/PostPage';
 import PopularBlogs from './components/PopularBlogs';
 import NotFound from './components/404';
 import ReactGA from 'react-ga';
@@ -202,12 +203,13 @@ function App() {
             }
           />
           <Route path="/links" element={<Links />} />
+          <Route path="/blog/:id" element={<PostPage />} />
           <Route path="/products/adapters/dc" element={<Adapters />} />
           <Route path="/services/ev-charger-installation" element={<Installation />} />
           <Route path="/services/roadside-charging-service" element={<Emergency />} />
           <Route path='/services' element={<Services />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
+          {/* <Route path="/blog/:id" element={<BlogPost />} /> */}
           <Route path="/blog/the-best-places-to-buy-ev-chargers-in-dubai" element={<PopularBlogs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
