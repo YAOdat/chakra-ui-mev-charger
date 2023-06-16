@@ -260,7 +260,7 @@ export const images = [
         id: '9',
         name: 'GB/T to Tesla Adapter',
         currency: 'AED',
-        price: 450,
+        price: 600,
         flag: 'new',
         imageUrl: 'https://iili.io/HregvLP.md.png',
         imageAlt: 'GB/T to Tesla Adapter',
