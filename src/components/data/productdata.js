@@ -413,6 +413,314 @@ export const images = [
             illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
         
         },
+
+        {
+            id:'15',
+            name: 'Tesla Car Diagnostic Scanner - Scan Your Tesla Using Your Phone',
+            currency: 'AED',
+            price: 800,
+            flag: 'new',
+            imageUrl: require('../images/product-images/ThinkDiag.webp'),
+            rating: 5,
+            ratingCount: 1,
+            description: 'D9 EV Professional EV Smart Diagnostic System, a high-performance 9.7-inch tablet that supports Bluetooth communication, DoIP, and CAN-FD protocols. With online software updates and compatibility with most Tesla EV models, it offers comprehensive diagnostic functions including battery pack detection, Tesla diagnosis, ECU information reading, DTC clearing, live data analysis, and over 40 special functions. Plus, it provides IMMO support for added security. Stay ahead with the D9 EV and unlock the full potential of electric vehicle diagnostics. ',
+            longDescription: `Introducing the D9 EV Professional EV Smart Diagnostic System, the ultimate companion for all your electric vehicle diagnostic needs. Engineered for excellence, this powerful tablet boasts a 9.7-inch display, delivering high performance and durability to ensure a long-lasting diagnostic experience.
+            This tool can scan and diagnose all Tesla models and clear error codes. It can also be used to reset the service light and perform battery resets.`,
+            portType: 'none',
+            function: 'scanner',
+            illustration: 'https://www.teslascanner.com/images/model-y.jpg',
+            illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
+            op: 'Android',
+            coverageList: [
+              {
+                brand: 'Acura (EV)',
+                image: require('../images/Brands/EV-Brands/Acura.png')
+              },
+              {
+                brand: 'Audi (EV)',
+                image: require('../images/Brands/EV-Brands/Audi.png')
+              },
+              {
+                brand: 'BAIC/Senoua (BAIC)/Weiwang (BAIC)/BJEV (EV)',
+                image: require('../images/Brands/EV-Brands/BAIC_Senova.png')
+              },
+              {
+                brand: 'BMW/Rolls Royce/Mini (EV)',
+                image: require('../images/Brands/EV-Brands/BMW.png')
+              },
+              {
+                brand: 'Brilliance (EV)',
+                image: require('../images/Brands/EV-Brands/Brilliance.png')
+              },
+              {
+                brand: 'BYD (EV)',
+                image: require('../images/Brands/EV-Brands/BYD.png')
+              },
+              {
+                brand: 'Changan (EV)',
+                image: require('../images/Brands/EV-Brands/changan.png')
+              },
+              {
+                brand: 'Changhe (EV)',
+                image: require('../images/Brands/EV-Brands/changhe.png')
+              },
+              {
+                brand: 'Chery (EV)',
+                image: require('../images/Brands/EV-Brands/Chery.png')
+              },
+              {
+                brand: 'Chrysler/Jeep (EV)',
+                image: require('../images/Brands/EV-Brands/Chrysler.png')
+              },
+              {
+                brand: 'Dodge (EV)',
+                image: require('../images/Brands/EV-Brands/Dodge.png')
+              },
+              {
+                brand: 'Citroen (EV)',
+                image: require('../images/Brands/EV-Brands/Citron.png')
+              },
+              {
+                brand: 'Jeep (EV)',
+                image: require('../images/Brands/EV-Brands/Jeep.webp')
+              },
+              {
+                brand: 'Cowin (EV)',
+                image: require('../images/Brands/EV-Brands/cowin.png')
+              },
+              {
+                brand: 'DFXK (EV)',
+                image: require('../images/Brands/EV-Brands/DFSK.png')
+              },
+              {
+                brand: 'FAW Tianjin (EV)',
+                image: require('../images/Brands/EV-Brands/FAW.jpg')
+              },
+              {
+                brand: 'Ford/Lincoln/Ford (Europe) (EV)',
+                image: require('../images/Brands/EV-Brands/Ford.png')
+              },
+              {
+                brand: 'Foton (EV)',
+                image: require('../images/Brands/EV-Brands/Foton.png')
+              },
+              {
+                brand: 'Geely (EV)',
+                image: require('../images/Brands/EV-Brands/Geely.png')
+              },
+              {
+                brand: 'GM/Cadillac/Buick (EV)',
+                image: require('../images/Brands/EV-Brands/GM.png')
+              },
+              {
+                brand: 'Chevrolet (EV)',
+                image: require('../images/Brands/EV-Brands/Chevrolet.png')
+              },
+              {
+                brand: 'Cadillac (EV)',
+                image: require('../images/Brands/EV-Brands/cad.webp')
+              },
+              {
+                brand: 'GWM (EV)',
+                image: require('../images/Brands/EV-Brands/GWM).png')
+              },
+              {
+                brand: 'Haima (EV)',
+                image: require('../images/Brands/EV-Brands/Haima.jpg')
+              },
+              {
+                brand: 'Hanteng (EV)',
+                image: require('../images/Brands/EV-Brands/HANTENG.png')
+              },
+              {
+                brand: 'Honda (EV)',
+                image: require('../images/Brands/EV-Brands/Honda.png')
+              },
+            
+              {
+                brand: 'Hyundai (EV)',
+                image: require('../images/Brands/EV-Brands/Hyundai.png')
+              },
+              {
+                brand: 'JAC (EV)',
+                image: require('../images/Brands/EV-Brands/JAC.png')
+              },
+              {
+                brand: 'Jetour (EV)',
+                image: require('../images/Brands/EV-Brands/Jetour.png')
+              },
+              {
+                brand: 'JMEV (EV)',
+                image: require('../images/Brands/EV-Brands/JMEV.png')
+              },
+              {
+                brand: 'JOYLONG',
+                image: require('../images/Brands/EV-Brands/Joylong.jpg')
+              },
+              {
+                brand: 'Karry (EV)',
+                image: require('../images/Brands/EV-Brands/Karry.png')
+              },
+              {
+                brand: 'Kia (EV)',
+                image: require('../images/Brands/EV-Brands/KIA.png')
+              },
+              {
+                brand: 'Landwind (EV)',
+                image: require('../images/Brands/EV-Brands/landwind-logo.png')
+              },
+              {
+                brand: 'Leopaard (EV)',
+                image: require('../images/Brands/EV-Brands/Leopaard.png')
+              },
+              {
+                brand: 'Lifan (EV)',
+                image: require('../images/Brands/EV-Brands/Lifan-logo.png')
+              },
+              {
+                brand: 'Luxgen (EV)',
+                image: require('../images/Brands/EV-Brands/luxgen-logo.png')
+              },
+              {
+                brand: 'Maxus (EV)',
+                image: require('../images/Brands/EV-Brands/maxus-logo.png')
+              },
+              {
+                brand: 'Mercedes-Benz/Maybach (EV)',
+                image: require('../images/Brands/EV-Brands/MercedesBENZ.png')
+              },
+              {
+                brand: 'MG (SAIC) (EV)',
+                image: require('../images/Brands/EV-Brands/Mg_logo.svg.png')
+              },
+              {
+                brand: 'Mitsubishi (EV)',
+                image: require('../images/Brands/EV-Brands/Mitsubishi.png')
+              },
+              {
+                brand: 'NETA (EV)',
+                image: require('../images/Brands/EV-Brands/Neta.png')
+              },
+              {
+                brand: 'Nissan/Infiniti (EV)',
+                image: require('../images/Brands/EV-Brands/Nissan_logo.png')
+              },
+              {
+                brand: 'NLM NEW ENERGY (EV)',
+                image: require('../images/Brands/EV-Brands/NLM.png')
+              },
+              {
+                brand: 'Opel/Vauxhall/Opel (South Africa) (EV)',
+                image: require('../images/Brands/EV-Brands/opel.png')
+              },
+              {
+                brand: 'Peugeot (EV)',
+                image: require('../images/Brands/EV-Brands/Peugeot.png')
+              },
+              {
+                brand: 'Porsche (EV)',
+                image: require('../images/Brands/EV-Brands/porsche-6-logo-svg-vector.svg')
+              },
+              {
+                brand: 'Renault/Dacia/Samsung Renault (EV)',
+                image: require('../images/Brands/EV-Brands/renault-old-vector-logo.png')
+              },
+              {
+                brand: 'Roewe (SAIC) (EV)',
+                image: require('../images/Brands/EV-Brands/Roewe_logo.png')
+              },
+              {
+                brand: 'Sanya (FAW) (EV)',
+                image: require('../images/Brands/EV-Brands/BMW.png')
+              },
+              {
+                brand: 'SGM/Buick (China) (EV)',
+                image: require('../images/Brands/EV-Brands/Sgmw.png')
+              },
+              {
+                brand: 'SGMW/United Pakistan (EV)',
+                image: require('../images/Brands/EV-Brands/Sgmw.png')
+              },
+              {
+                brand: 'SKYWORTH NEW ENERGY (EV)',
+                image: require('../images/Brands/EV-Brands/skyworth-logo.png')
+              },
+              {
+                brand: 'SMART (EV)',
+                image: require('../images/Brands/EV-Brands/Smart.png')
+              },
+              {
+                brand: 'Soueast (EV)',
+                image: require('../images/Brands/EV-Brands/Soueast.png')
+              },
+              {
+                brand: 'Sprinter (EV)',
+                image: require('../images/Brands/EV-Brands/sprinter.png')
+              },
+              {
+                brand: 'TESLA (EV)',
+                image: require('../images/Brands/EV-Brands/Tesla_Motors.svg.png')
+              },
+              {
+                brand: 'Toyota/Lexus (EV)',
+                image: require('../images/Brands/EV-Brands/BMW.png')
+              },
+              {
+                brand: 'Trumpchi (EV)',
+                image: require('../images/Brands/EV-Brands/Trumpchi.png')
+              },
+              {
+                brand: 'Volvo (EV)',
+                image: require('../images/Brands/EV-Brands/Volvo.png')
+              },
+              {
+                brand: 'VW (EV)',
+                image: require('../images/Brands/EV-Brands/Volkswagen.png')
+              },
+              {
+                brand: 'Weichai (EV)',
+                image: require('../images/Brands/EV-Brands/Weichai.png')
+              },
+              {
+                brand: 'WM (EV)',
+                image: require('../images/Brands/EV-Brands/WM-c6b6879b.png')
+              },
+              {
+                brand: 'XP (EV)',
+                image: require('../images/Brands/EV-Brands/XPEV_BIG-3c6bf257.png')
+              },
+              {
+                brand: 'YQJC NEW ENERGY (EV)',
+                image: require('../images/Brands/EV-Brands/BMW.png')
+              },
+              {
+                brand: 'Yuejin (EV)',
+                image: require('../images/Brands/EV-Brands/yuejin.png')
+              },
+              {
+                brand: 'ZEDRIV New Energy (EV)',
+                image: require('../images/Brands/EV-Brands/Zedriv.png')
+              },
+              {
+                brand: 'ZHONGXING NEW ENERGY (EV)',
+                image: require('../images/Brands/EV-Brands/ZX_AUTO_logo.png')
+              },
+              {
+                brand: 'Zotye (EV)',
+                image: require('../images/Brands/EV-Brands/Zotye.png')
+              },
+              {
+                brand: 'ZZ NISSAN ZY (EV)',
+                image: require('../images/Brands/EV-Brands/Zedriv.png')
+              },
+            ],
+          
+            
+
+
+
+
+        }
         
 
   ];
