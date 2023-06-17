@@ -16,13 +16,27 @@ import {
   Th,
   Td,
   Link,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Image,
+  Icon,
 } from '@chakra-ui/react';
+
+import { ChevronDownIcon } from '@chakra-ui/icons'
 import { MdLocalShipping } from 'react-icons/md';
 import { useParams } from 'react-router-dom';
 import { products } from '../components/data/productdata.js';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
+import CarBonnetClosed from './images/Icon Images/car.png';
+import CarBonnetOpen from './images/Icon Images/bonnet.png';
 
 export default function Simple() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
   const { id } = useParams();
   const product = products.find((product) => product.id === id);
 
@@ -189,13 +203,60 @@ export default function Simple() {
           </Button>
         </Stack>
         <Box>
-          <Text color={'gray.500'} fontSize={'xl'} mt={8}>
+          <Text color={'gray.500'} fontSize={'xl'} my={4}>
             {renderedDescription}
           </Text>
+
+{product.coverageList && (
+  <Menu>
+    <MenuButton
+      as={Button}
+      rightIcon={<ChevronDownIcon />}
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+      my={3}
+      w="100%"
+    >
+      <Flex align="center">
+        Supported Vehicles
+        <Image
+          src={isMenuOpen ? CarBonnetOpen : CarBonnetClosed}
+          alt="car bonnet"
+          w="24px"
+          ml="8px"
+        />
+      </Flex>
+    </MenuButton>
+    <MenuList maxH="200px">
+      <input
+        type="text"
+        placeholder="Search brand..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
+      />
+      {product.coverageList
+        .filter((item) =>
+          item.brand.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+        .map((item) => (
+          <MenuItem key={item.brand} minH="48px">
+            <Image
+              boxSize="2rem"
+              borderRadius="full"
+              src={item.image}
+              alt={item.brand}
+              mr="12px"
+            />
+            <span>{item.brand}</span>
+          </MenuItem>
+        ))}
+    </MenuList>
+  </Menu>
+)}
           <img src={product.illustration} alt="product image" />
-              <Heading as="h2" size="md" my={2}>
-                Specifications:
-              </Heading>
+          <Heading as="h2" size="md" my={2}>
+            Specifications:
+          </Heading>
           <Table variant="striped" colorScheme="gray">
             <Thead>
               <Tr>
@@ -240,12 +301,20 @@ export default function Simple() {
                   <Td>{product.current}</Td>
                 </Tr>
               )}
+              {product.op && (
+                <Tr>
+                  <Td>Operating System</Td>
+                  <Td>{product.op}</Td>
+                </Tr>
+              )}
             </Tbody>
           </Table>
+ 
+
           {product.illustration2 && (
             <Link href={`/products/${product.id}`}>
-          <img src={product.illustration2} alt={product.name} />
-          </Link>
+              <img src={product.illustration2} alt={product.name} />
+            </Link>
           )}
         </Box>
       </SimpleGrid>
