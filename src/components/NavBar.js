@@ -329,6 +329,12 @@ const NAV_ITEMS = [
     ],
   },
   {
+    label: 'Support',
+    subLabel: 'Get help with your charger',
+    href: '/support',
+
+  },
+  {
     label: 'Blog',
     href: '/blog',
   },
