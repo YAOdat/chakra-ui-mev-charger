@@ -720,7 +720,36 @@ export const images = [
 
 
 
+        },
+
+        {
+            id: '16',
+            name: 'Portable EV Charger Compatible with All Electric Cars',
+            imageUrl: require('../images/product-images/Portable-EV-Charger.webp'),
+            price: 950,
+            rating: 5,
+            ratingCount: 5,
+            description: 'Portable EV Charger Compatible with All Electric Cars, 32A 7.68KW. It is available in 3 different charging ports (Type 1, Type 2, and GBT).',
+            longDescription: `Explore our collection of high-performance 7.7 kW portable EV chargers, designed to provide convenience and flexibility for electric vehicle owners. Our chargers come in multiple versions to cater to various car models, ensuring seamless charging experiences for a diverse range of electric vehicles.
+
+            Version 1: GBT Port - Compatible with ID.4 and ID.6 Electric Cars
+            Our first charger variant features a GBT port, specifically engineered to seamlessly charge ID.4 and ID.6 electric cars. With this option, owners of these Volkswagen models can enjoy efficient charging on-the-go, enhancing their overall driving experience.
+            
+            Version 2: Type 2 Charging Port - Compatible with Tesla, Mercedes, BMW, and More
+            We also offer a second version equipped with a Type 2 charging port, which is fully compatible with a wide array of electric vehicles, including popular brands like Tesla, Mercedes, BMW, and many others. With this option, users can easily charge their vehicles from various manufacturers, providing convenience and adaptability.
+            
+            Version 3: Type 1 EV Charging Port - Compatible with US Cars such as Ford, GMC, Chevrolet
+            For owners of US-manufactured electric vehicles, such as Ford, GMC, and Chevrolet, we provide a third version featuring a Type 1 EV charging port. This particular variant ensures optimal compatibility and efficient charging for American-made electric cars, making it an ideal choice for customers in the United States.
+            
+            Experience the Freedom of Portable Charging
+            With our range of 7.7 kW portable EV chargers, you can enjoy the freedom of charging your electric vehicle anywhere, anytime. Our chargers are meticulously designed to meet high-performance standards, ensuring reliable and speedy charging sessions. Explore our versatile collection today and find the perfect charger to suit your specific needs.`,
+            illustration: 'https://s.alicdn.com/@sc04/kf/H5a75a6fea3e54154843908d7ba6fee199.jpg_720x720q50.jpgc',
+            power: '7.7 kW',
+            current: '32 A',
+            cableLength: '3.5 m',
+            availablePorts: 'Type 1, Type 2, GBT',
         }
+        
         
 
   ];
