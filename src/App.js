@@ -24,6 +24,7 @@ import Emergency from './components/Emergency';
 import BlogPost from './components/BlogPost';
 import Blog from './components/Blog';
 import PostPage from './components/PostPage';
+import Support from './components/Support';
 import PopularBlogs from './components/PopularBlogs';
 import NotFound from './components/404';
 import ReactGA from 'react-ga';
@@ -203,6 +204,7 @@ function App() {
             }
           />
           <Route path="/links" element={<Links />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/blog/:id" element={<PostPage />} />
           <Route path="/products/adapters/dc" element={<Adapters />} />
           <Route path="/services/ev-charger-installation" element={<Installation />} />
