@@ -166,6 +166,9 @@ export const images = [
       portType: 'tesla',
       function: 'adapter',
       portType2: 'type1',
+      availablePorts: 'Type 1 to Tesla',
+      power: 'AC',
+      illustration: require('../images/product-images/Tesla_Adapter.jpg'),
       longDescription: `Introducing the Type 1 to Tesla EV Adapter - your ultimate solution for effortless and seamless charging compatibility. Designed with precision and innovation, this adapter is a game-changer for Type 1 electric vehicle (EV) owners who want to tap into the world of Tesla charging infrastructure.
 
       Engineered to perfection, the Type 1 to Tesla EV Adapter is meticulously crafted to ensure a secure and reliable connection between your Type 1 EV and Tesla charging stations. With this adapter in your possession, you can bid farewell to any concerns about compatibility and enjoy the convenience of accessing Tesla's expansive Supercharger network.
@@ -315,17 +318,17 @@ export const images = [
             rating: 5,
             ratingCount: 3,
             description: 'Fast charging DC adapter for Volkswagen ID4 and ID6.',
-            portType: 'type 2',
+            portType: 'gbt',
             function: 'adapter',
-            longDescription: 'Fast Charging DC Adapter designed exclusively for the Volkswagen ID.4 and ID.6 models, and Changan. Engineered to deliver unparalleled efficiency and convenience, this adapter takes the hassle out of recharging your VW electric vehicle and any car with GBT charging port. You can charger your GBT car with type2 tesla charger like EU Tesla, BMW, Audi, Mercedes, Porsche, and many more electric vehicles with Type 2 charging port.',
+            longDescription: `Fast Charging DC Adapter designed exclusively for the Volkswagen ID.4 and ID.6 models, and Changan. Engineered to deliver unparalleled efficiency and convenience, this adapter takes the hassle out of recharging your VW electric vehicle and any car with GBT charging port. You can charger your GBT car with type2 tesla charger like EU Tesla, BMW, Audi, Mercedes, Porsche, and many more electric vehicles with Type 2 charging port.
+            This adapter can fully charge your EV with less than an hour.`,
             illustration: 'https://www.midaevse.com/uploads/CCS2-GBT-Adapter.jpg',
             illustration2: 'https://d.yixunpan.top/electway.com/wp-content/uploads/2021/03/img-5875.jpg',
-            availablePorts: 'gbt',
+            availablePorts: 'CCS2 to GBT',
             current: '200 A',
             operatingTemperature: '-30°C to +50°C',
             weight: '2 kg',
             power: '~50 kW',
-            cableLength: '-',
         },
 
         {
