@@ -35,9 +35,12 @@ export default function WithSubnavigation() {
   const location = useLocation(); 
 
   const handleLanguageSwitch = () => {
-    const currentPath = location.pathname;
-    const newUrl = currentPath.replace('https://www.', 'https://ar.'); // Replace www with ar in the URL
-    window.location.href = newUrl;  };
+    const currentUrl = window.location.href;
+    console.log(currentUrl)
+    const newUrl = currentUrl.replace('https://www.', 'https://ar.'); // Replace www with ar in the URL
+    console.log(newUrl);
+    window.location.href = newUrl;
+    };
 
   return (
     <Box>
