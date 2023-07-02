@@ -718,10 +718,6 @@ export const images = [
               },
             ],
           
-            
-
-
-
 
         },
 
@@ -751,10 +747,9 @@ export const images = [
             current: '32 A',
             cableLength: '3.5 m',
             availablePorts: 'Type 1, Type 2, GBT',
-        }
-        
-        
-
+        },
+    
+      
   ];
   
 
