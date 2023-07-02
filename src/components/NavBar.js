@@ -24,7 +24,7 @@ import {
   ChevronRightIcon,
   MoonIcon,
 } from '@chakra-ui/icons';
-
+import { useLocation } from 'react-router-dom';
 import { BsWhatsapp } from 'react-icons/bs';
 import Logo from './images/mevchargerslogo.png';
 import ArabicLanguage from './images/Icon Images/arabic-language.png';
@@ -32,10 +32,12 @@ import ArabicLanguage from './images/Icon Images/arabic-language.png';
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const location = useLocation(); 
 
-  const toggleLanguageChange = () => {
-    window.location.href = "https://ar.mevcharger.com";
-  };
+  const handleLanguageSwitch = () => {
+    const currentPath = location.pathname;
+    const newUrl = currentPath.replace('https://www.', 'https://ar.'); // Replace www with ar in the URL
+    window.location.href = newUrl;  };
 
   return (
     <Box>
@@ -101,7 +103,7 @@ export default function WithSubnavigation() {
           <Button onClick={toggleColorMode}>
             <MoonIcon />
           </Button>
-          <Link as={Button} onClick={toggleLanguageChange}>
+          <Link as={Button} onClick={handleLanguageSwitch}>
             <Image src={ArabicLanguage} alt="Arabic Language" width={25} />
           </Link>
         </Stack>
