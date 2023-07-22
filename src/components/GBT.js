@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Image, Text, Button, Link, Icon, useBreakpointValue, Heading } from '@chakra-ui/react';
 import { products } from './data/productdata';
 import { FaBackward } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const GBT = () => {
   const filteredProducts = products.filter((product) => product.portType === 'gbt' || product.portType2 === 'gbt');
@@ -10,6 +11,20 @@ const GBT = () => {
 
   return (
     <Box>
+      <Helmet>
+        <title> ID4 and ID6 EV Chargers</title>
+        <meta name="description" content="Find the best ID4 and ID6 EV chargers in UAE and Dubai" />
+        <meta name='keyword' content='ID4 EV chargers' />
+        <meta name='keyword' content='ID6 EV chargers' />
+        <meta name='keyword' content='ID4 EV charger' />
+        <meta name='keyword' content='ID6 EV charger' />
+        <meta name='keyword' content='ID4 EV chargers in UAE' />
+        <meta name='keyword' content='ID6 EV chargers in UAE' />
+        <meta name='keyword' content='ID4 EV chargers in Dubai' />
+        <meta name='keyword' content='ID6 EV chargers in Dubai' />
+        <meta name='keyword' content='GBT Port Charger' />
+
+      </Helmet>
        <Heading as='h1' size='1xl' noOfLines={1}>
         Find the best VW/Changan charger for your vehicle.
       </Heading>

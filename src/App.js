@@ -21,7 +21,6 @@ import Services from './components/Services';
 import Links from './components/Links';
 import Installation from './components/Installation';
 import Emergency from './components/Emergency';
-import BlogPost from './components/BlogPost';
 import Blog from './components/Blog';
 import PostPage from './components/PostPage';
 import Support from './components/Support';

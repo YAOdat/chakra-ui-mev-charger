@@ -76,6 +76,22 @@ export default function Simple() {
 
   return (
     <Container maxW={'7xl'}>
+      <Helmet>
+        <title> {product.name} | MEV Charger </title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={product.name} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={product?.imageUrl} />
+        <meta property="og:url" content={`https://mevcharger.com/product/${product.id}`} />
+        <meta property="og:type" content="product" />
+        <meta property="og:price:amount" content={product.price} />
+        <meta property="og:price:currency" content="AED" />
+        <meta property="og:availability" content="instock" />
+        <meta property="og:brand" content="MEV Charger" />
+        <meta property="og:condition" content="new" />
+        <meta property="og:retailer_item_id" content={product.id} /> 
+        <meta property="product:brand" content="Mega" />
+      </Helmet>
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
@@ -109,8 +125,15 @@ export default function Simple() {
             >
               {product.name}
             </Heading>
-            <Text fontWeight={400} fontSize={'2xl'}>
-              {`AED ${product.price} `}
+            <Text fontWeight={400} fontSize="2xl">
+              {product.salePrice ? (
+                <Flex>
+                  <Text as="s">{`${product.price} AED`}</Text>
+                  <Text pr={4}>{`${product.salePrice} AED`}</Text>
+                </Flex>
+              ) : (
+                `${product.price} AED`
+              )}
             </Text>
           </Box>
           <Box>
