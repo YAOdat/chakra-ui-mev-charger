@@ -92,7 +92,6 @@ export default function Simple() {
         <meta property="og:retailer_item_id" content={product.id} /> 
         <meta property="product:brand" content="Mega" />
       </Helmet>
-
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
