@@ -35,7 +35,8 @@ export const images = [
       id: '1',
       name: 'Wallbox EV Charger',
       currency: 'AED',
-      price: 1800,
+      price: 1700,
+      salesPrice: 1500,
       flag: 'new',
       imageUrl: 'https://iili.io/Hr78TZb.md.webp',
       rating: 4,
@@ -748,6 +749,62 @@ export const images = [
             cableLength: '3.5 m',
             availablePorts: 'Type 1, Type 2, GBT',
         },
+        {
+            id: '17',
+            name: 'Tesla WallBox EV Charger',
+            imageUrl: require('../images/product-images/teslatype2teison.jpg'),
+            price: 1750,
+            salePrice: 1600,
+            rating: 5,
+            ratingCount: 3,
+            description: 'Tesla WallBox EV Charger, 22KW 32A, Type 2, 3 Phase, 4.5m Cable, with IP65 protection level.            ',
+            longDescription: `Introducing the Tesla Smart Mini Wallbox by Teison, the perfect solution for efficient and intelligent electric vehicle charging at home. Designed with a sleek and stylish appearance, this compact EV charger offers unparalleled performance, safety, and convenience.
+
+            The Tesla Smart Mini Wallbox comes in various models with different power outputs, including 3.5kW, 7kW, 11kW, and 22kW, catering to the diverse needs of electric vehicle owners. With its industry-leading inner design, the Wallbox ensures top efficiency, delivering fast and reliable charging for your electric car.
+            
+            One of the standout features of this Wallbox is its easy Smartphone control through the dedicated mobile app, MY Teison. Thanks to AI Identity recognition, the app enables secure access and personalized charging options for users. With the app, you can remotely manage and monitor your EV charging sessions, making it a seamless and user-friendly experience.
+            
+            Equipped with both WIFI and Bluetooth capabilities, the Smart Mini Wallbox ensures efficient communication, enabling hassle-free connectivity to your electric vehicle and the MY Teison app.
+            
+            Safety is a top priority for Teison, and this is evident in the Tesla Smart Mini Wallbox's design. It adheres to industry safety standards, such as EN IEC61851-21-2-2021, EN IEC61000-6-1-2019, EN IEC61000-6-2-2019, EN IEC61000-6-3-2021, EN IEC61851-1-2019, EN IEC61000-6-42019, ETSI EN300 328 V2.2.2:2019, ETSI EN 300 330 V2.1.1:2017, ETSI EN301 489-1 V2.2.3:2019, ETSI EN301 489-3 V2.1.1:2019, and ETSI EN301 489-17.
+            
+            Installation of the Tesla Smart Mini Wallbox is versatile, offering both wall-mount and floor-stand options to suit your preferences and available space. The charging outlet comes with a 4.5-meter long charging cable, providing ample reach to your electric vehicle, and is available with either a typel/2 plug or a type2 socket, ensuring compatibility with most electric cars.
+            
+            In conclusion, the Tesla Smart Mini Wallbox by Teison is an intelligent and reliable EV charger that offers efficient charging, stylish design, and seamless smartphone control. Whether you own a Tesla or any other electric vehicle, this Wallbox provides a safe and convenient charging solution for your home. Say goodbye to range anxiety and experience the future of electric vehicle charging with Teison's cutting-edge technology.`
+
+        },
+        {
+          id: '18',
+          name: 'Mercedes Benz EV Charger - EQS, EQC, EQA, EQB',
+          imageUrl: require('../images/product-images/New-Mega-Charger.png'),
+          price: 1600,
+          rating: 5,
+          ratingCount: 1,
+          description: 'Mercedes Benz EV Charger is compatible with all Mercedes Benz EV cars. This includes EV Mercedes EQS, EQC, EQA, and EQB that has the port Type 2.',
+          longDescription: `The Mercedes Benz EV Charger is a cutting-edge charging solution designed specifically for owners of Mercedes Benz electric vehicles, including the popular EQS, EQC, EQA, and EQB models equipped with the Type 2 charging port. With its sleek and compact design, this charger is a perfect blend of style and functionality, making it an ideal choice for home use.
+
+          Key Features:
+          
+          1. Comprehensive Compatibility: The Mercedes Benz EV Charger is tailored to cater to all Mercedes Benz electric vehicles that come with the Type 2 charging port. Whether you own the luxurious EQS, the sporty EQC, the compact EQA, or the versatile EQB, this charger ensures a seamless charging experience for your EV.
+          
+          2. Household Single-Phase/Three-Phase AC Charging: Engineered specifically for household use, this charger operates on both single-phase and three-phase AC power, providing flexible charging options that suit the needs of your home electrical setup.
+          
+          3. Enhanced Security: To safeguard against electricity theft and unauthorized use, the charger comes equipped with a lock plug gun hanger bracket, providing an added layer of protection and peace of mind.
+          
+          4. Wall-Mounted Convenience: The product's design is thoughtfully minimalistic, allowing for easy wall-mounting. With its compact A4 paper size form factor, the charger fits seamlessly into any home environment without taking up excessive space.
+          
+          5. Superior IP65 Protection: The Mercedes Benz EV Charger boasts an impressive IP65 protection rating, exceeding industry standards. This ensures the charger's resilience in various environmental conditions, including typhoons, rainstorms, and sandy or dusty surroundings. Thanks to its anti-UV design, no additional protective devices are necessary for its operation.
+          
+          6. Durable High-Temperature Resistant Materials: The charger's construction utilizes high-temperature resistant plastic panels, ensuring durability and longevity even in extreme weather conditions. The emphasis on quality and craftsmanship is evident in its sleek and exquisite design.
+          
+          7. Industrial-Grade Components: Engineered to perform in extreme environments, this charger employs industrial-grade components, granting it a design life of 15 years. It can function reliably in temperatures as low as -30℃ in icy conditions or as high as 55℃ in scorching hot deserts.
+          
+          The Mercedes Benz EV Charger is a testament to Mercedes Benz's commitment to sustainability, convenience, and innovation. It offers a seamless and secure charging experience, allowing owners of Mercedes Benz electric vehicles to enjoy their EVs to the fullest while contributing to a greener future. Embrace the future of mobility with this state-of-the-art EV charging solution from Mercedes Benz.`,
+illustration: require('../images/product-images/mercedes-wallbox.jpg'),
+weight: '4.0 kg (Net weight including equipment)',
+power: '7.7 / 11 kW',
+          
+        }
     
       
   ];

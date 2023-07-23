@@ -15,11 +15,24 @@ import { ProductCard } from './ProductCard'
 import { products } from './data/productdata'
 import { ProductGrid } from './ProductGrid'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-export default function CallToActionWithAnnotation() {
+export default function Home() {
   return (
     <>
-     
+     <Helmet>
+        <title>EV Chargers | Home</title>
+        <meta name="description" content="Find the best EV chargers in UAE and Dubai" />
+        <meta name='keyword' content='EV chargers' />
+        <meta name='keyword' content='EV charger' />
+        <meta name='keyword' content='EV adapter' />
+        <meta name='keyword' content='EV chargers in UAE' />
+        <meta name='keyword' content='EV chargers in Dubai' />
+
+      </ Helmet>
+
+
+
       <Container maxW={'3xl'}>
         <Stack
           as={Box}

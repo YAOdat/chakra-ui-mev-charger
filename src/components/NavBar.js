@@ -36,9 +36,7 @@ export default function WithSubnavigation() {
 
   const handleLanguageSwitch = () => {
     const currentUrl = window.location.href;
-    console.log(currentUrl)
     const newUrl = currentUrl.replace('https://www.', 'https://ar.'); // Replace www with ar in the URL
-    console.log(newUrl);
     window.location.href = newUrl;
     };
 
