@@ -91,6 +91,8 @@ export default function Simple() {
         <meta property="og:condition" content="new" />
         <meta property="og:retailer_item_id" content={product.id} /> 
         <meta property="product:brand" content="Mega" />
+        {product.tags && <meta property="product:category" content={product.tags} />}
+        {product.tags && <meta name='keywords' content={product.tags} />}
       </Helmet>
 
       <SimpleGrid
@@ -327,10 +329,20 @@ export default function Simple() {
                   <Td>{product.op}</Td>
                 </Tr>
               )}
+                {product.operatingTemperature && (
+                <Tr>
+                  <Td>Operating Temperature</Td>
+                  <Td>{product.operatingTemperature}</Td>
+                </Tr>
+              )}
+               {product.specialFeature && (
+                <Tr>
+                  <Td>Special Feature</Td>
+                  <Td>{product.specialFeature}</Td>
+                </Tr>
+              )}
             </Tbody>
           </Table>
- 
-
           {product.illustration2 && (
             <Link href={`/products/${product.id}`}>
               <img src={product.illustration2} alt={product.name} />

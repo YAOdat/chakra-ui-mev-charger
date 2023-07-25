@@ -377,7 +377,6 @@ export const images = [
             cableLength: '5m, 10m, 15m',
             inputVoltage: 'AC220V±15%',
             inputFrequency: '50Hz',
-            operatingTemperature:'-30℃C~+55℃',
             color: [
                 { name: 'white', imageUrl: require('../images/product-images/white-ev-charger.webp') },
                 { name: 'black', imageUrl: require('../images/product-images/black-ev-charger.webp') },
@@ -774,7 +773,7 @@ export const images = [
 
         },
         {
-          id: '18',
+          id: '21',
           name: 'Mercedes Benz EV Charger - EQS, EQC, EQA, EQB',
           imageUrl: require('../images/product-images/New-Mega-Charger.png'),
           price: 1600,
@@ -803,7 +802,34 @@ export const images = [
 illustration: require('../images/product-images/mercedes-wallbox.jpg'),
 weight: '4.0 kg (Net weight including equipment)',
 power: '7.7 / 11 kW',
+portType: 'Type 2',
+tags: ['Mercedes Benz EV Charger', 'EQS EV Charger', 'EQS Charger', 'EQC EV Charger', 'EQC Charger', 'EQA EV Charger', 'EQA Charger', 'EQB EV Charger', 'EQB Charger', 'Mercedes EV Charger', 'Mega EV Charger', 'Home EV Charger Dubai'],
           
+        },
+
+        {
+          id: '22',
+          name: 'CCS2 to CCS1 Adapter - EU Standard to US Standard EV Connector',
+          imageUrl: require('../images/product-images/CCS2toCCS1.png'),
+          price: 1350,
+          rating: 5,
+          ratingCount: 1,
+          description: 'Using the CCS2 to CCS1 DC Adapter you can charge your Ford, Chevrolate, Cadellic, GMC, Jeep, and other US cars with the DC chargers with CCS2 charging ports in the UAE.',
+          longDescription: `The CCS2 to CCS1 adapter for American cars in the Gulf is an innovative and efficient product designed to ensure compatibility and compliance for popular American car models such as Ford, Chevrolet, GMC, Jeep, Cadillac, and others with fast public electric chargers in the region.
+
+          This adapter allows owners of American cars to utilize the widely used CCS2 charging stations, including EU Tesla chargers and DEWA (Dubai Electricity and Water Authority) fast CCS2 chargers, without any concerns about port compatibility or charging limitations.
+          
+          The adapter is built with durability and high performance in mind, enabling drivers to charge their vehicles quickly and effortlessly at public charging locations across the region. It is crafted using high-quality technology to ensure safety and protection during the charging process, making it a secure and reliable choice for American car owners in the Gulf.
+          
+          By using this adapter, users of American cars can take advantage of ultra-fast charging and avoid any unwanted delays due to port incompatibility. As a result, this product contributes to promoting clean transportation, encouraging electric vehicle usage, and reducing harmful emissions in the area.
+          
+          In conclusion, the CCS2 to CCS1 adapter for American cars in the Gulf is an ideal and dependable solution for American car owners who wish to fully utilize the available fast public charging network and contribute to environmental preservation in the region. `,
+          illustration: require('../images/product-images/CCS2toCCS1.jpg'),
+          power: '200 kW',
+          current: '250 A',
+          operatingTemperature: '-30℃ to 85℃',
+          availablePorts: 'CCS2 to CCS1',
+          specialFeature: 'Safety Lock',
         }
     
       
