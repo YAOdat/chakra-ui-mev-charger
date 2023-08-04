@@ -63,6 +63,7 @@ export const images = [
       power: '7.7 / 11 / 22 kW',
       metaDescription:
       'Discover our Wallbox EV Charger with versatile connectors and advanced features. Safely and conveniently charge your electric vehicle with our reliable and high-performance charger. Suitable for a wide range of EV models.',
+      tags: ['Wallbox EV charger', 'EV charger dubai']
     },
       
     {
@@ -102,14 +103,14 @@ export const images = [
     },
     {
       id: '3',
-      name: 'Type 1 to Type 2 EV Charger Extension Cable',
+      name: 'Type 2 to Type 1 EV Charger Extension Cable',
       currency: 'AED',
       price: 550,
       imageUrl: 'https://iili.io/Hr7856Q.md.png',
       rating: 4,
       ratingCount: 20,
       description:
-        'With a sleek design and a captivating essence, this is a modern Classic made for every occasion.',
+        'With this extension cable you can charger your Type 1 electric car using Type 2 chargers',
       images,
       portType: 'type1',
       function: 'extensionCable',
@@ -830,6 +831,7 @@ tags: ['Mercedes Benz EV Charger', 'EQS EV Charger', 'EQS Charger', 'EQC EV Char
           operatingTemperature: '-30℃ to 85℃',
           availablePorts: 'CCS2 to CCS1',
           specialFeature: 'Safety Lock',
+          function: 'adapter',
         }
     
       
