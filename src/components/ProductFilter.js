@@ -47,12 +47,18 @@ const ProductFilter = ({ products, onFilterChange }) => {
               </Link>
               <Box ml={[0, 4]} mt={[4, 0]}>
                 <Text fontWeight="bold">{product.name}</Text>
-                <Text>AED {product.price}</Text>
-                {product.salePrice && (
-                  <Text as="s" color="gray.500" ml={2}>
-                    AED {product.salePrice}
-                  </Text>
-                )}
+                {product.salePrice ? (
+    <div>
+      <Text as="s" color="gray.500" ml={2}>
+        AED {product.price}
+      </Text>
+      <Text color="green.500" ml={2}>
+        AED {product.salePrice}
+      </Text>
+    </div>
+  ) : (
+    <Text>AED {product.price}</Text>
+  )}
                 <Text>{product.description}</Text>
                 <Link href={`https://wa.me/971501679410?text=Hi,%20I%20would%20like%20to%20order%20${encodeURIComponent(product.name)}%20for%20AED%20${product.price}`} isExternal>
                   <Button colorScheme="green" width="half" mt={2}>
