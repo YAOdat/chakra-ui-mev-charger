@@ -912,7 +912,6 @@ tags: ['Mercedes Benz EV Charger', 'EQS EV Charger', 'EQS Charger', 'EQC EV Char
         tags: ['EV station', 'portable ev station', 'EV power station', 'Mobile EV charger', 'Electric Car Charging Station'],
         illustration: require('../images/product-images/Portable-EV-Station-Power-Bank.png'),
         illustration2: require('../images/product-images/EV-Station.jpg'),
-
         power: '30 kW',
         portType: 'CCS2',
         function: 'charger',
@@ -924,7 +923,7 @@ tags: ['Mercedes Benz EV Charger', 'EQS EV Charger', 'EQS Charger', 'EQC EV Char
         id: '24',
         name: 'Portable EV Charging Station - 60 KWH Portable Charger Station',
         imageSource: require('../images/product-images/Portable-EV-Station.png'),
-        price: 70000,
+        price: 117000,
         rating: 5,
         ratingCount: 1,
         description: 'The Portable EV Charging Station is a powerful 60 kW portable charger station that can deliver up to 100 miles of range in just one hour of charging. It is the perfect solution for on-road EV charging.',
