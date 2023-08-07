@@ -21,7 +21,6 @@ import {
   MenuList,
   MenuItem,
   Image,
-  Icon,
 } from '@chakra-ui/react';
 
 import { ChevronDownIcon } from '@chakra-ui/icons'
@@ -31,6 +30,7 @@ import { products } from '../components/data/productdata.js';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import CarBonnetClosed from './images/Icon Images/car.png';
 import CarBonnetOpen from './images/Icon Images/bonnet.png';
+import RelatedProducts from './RelatedProducts.js';
 
 export default function Simple() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -82,8 +82,9 @@ export default function Simple() {
         <meta property="og:title" content={product.name} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={product?.imageUrl} />
-        <meta property="og:url" content={`https://mevcharger.com/product/${product.id}`} />
+        <meta property="og:url" content={`https://en.mevcharger.com/product/${product.id}`} />
         <meta property="og:type" content="product" />
+        <meta name='keywords' content={product.tags} />
         <meta property="og:price:amount" content={product.price} />
         <meta property="og:price:currency" content="AED" />
         <meta property="og:availability" content="instock" />
@@ -91,8 +92,6 @@ export default function Simple() {
         <meta property="og:condition" content="new" />
         <meta property="og:retailer_item_id" content={product.id} /> 
         <meta property="product:brand" content="Mega" />
-        {product.tags && <meta property="product:category" content={product.tags} />}
-        {product.tags && <meta name='keywords' content={product.tags} />}
       </Helmet>
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
@@ -127,15 +126,8 @@ export default function Simple() {
             >
               {product.name}
             </Heading>
-            <Text fontWeight={400} fontSize="2xl">
-              {product.salePrice ? (
-                <Flex>
-                  <Text as="s">{`${product.price} AED`}</Text>
-                  <Text pr={4}>{`${product.salePrice} AED`}</Text>
-                </Flex>
-              ) : (
-                `${product.price} AED`
-              )}
+            <Text fontWeight={400} fontSize={'2xl'}>
+              {`AED ${product.price} `}
             </Text>
           </Box>
           <Box>
@@ -274,6 +266,7 @@ export default function Simple() {
     </MenuList>
   </Menu>
 )}
+{console.log(product.illustration)}
           <img src={product.illustration} alt="product image" />
           <Heading as="h2" size="md" my={2}>
             Specifications:
@@ -328,20 +321,16 @@ export default function Simple() {
                   <Td>{product.op}</Td>
                 </Tr>
               )}
-                {product.operatingTemperature && (
+               {product.dimensions && (
                 <Tr>
-                  <Td>Operating Temperature</Td>
-                  <Td>{product.operatingTemperature}</Td>
-                </Tr>
-              )}
-               {product.specialFeature && (
-                <Tr>
-                  <Td>Special Feature</Td>
-                  <Td>{product.specialFeature}</Td>
+                  <Td>Dimensions</Td>
+                  <Td>{product.dimensions}</Td>
                 </Tr>
               )}
             </Tbody>
           </Table>
+ 
+
           {product.illustration2 && (
             <Link href={`/products/${product.id}`}>
               <img src={product.illustration2} alt={product.name} />
@@ -349,6 +338,8 @@ export default function Simple() {
           )}
         </Box>
       </SimpleGrid>
+      <RelatedProducts />
+
     </Container>
   );
 }
